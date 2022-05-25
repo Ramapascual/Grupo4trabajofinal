@@ -1,5 +1,3 @@
 # Grupo 4 
 
-
-
-[Wireframe](documentos/diseño/wireframe.md)
+[**1.WIREFRAME**](documentos/diseño/wireframe.md)
