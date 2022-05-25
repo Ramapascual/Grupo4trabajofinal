@@ -1,5 +1,5 @@
-# Grupo_4_trabajo_final
-Trabajo final
+# Grupo 4 
+
 
 
 [Wireframe](documentos/diseño/wireframe.md)
