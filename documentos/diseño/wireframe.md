@@ -16,3 +16,27 @@ Register wireframe
 CheckOut Wireframe
 
 ![Image text](https://github.com/Ramapascual/Grupo_4_Trabajo_Final/blob/main/documentos/dise%C3%B1o/Checkout%20wireframe%20rama.png)
+
+PagInicio Wireframe 
+
+![Image text](https://github.com/Ramapascual/Grupo_4_Trabajo_Final/blob/main/documentos/dise%C3%B1o/Pagina%20inicio%202.png)
+
+PagProductos Wireframe
+
+![Image text](https://github.com/Ramapascual/Grupo_4_Trabajo_Final/blob/main/documentos/dise%C3%B1o/WIREFRAME%20PAGINA%20productos.png)
+
+PagInicio2 Wireframe
+
+![Image text](https://github.com/Ramapascual/Grupo_4_Trabajo_Final/blob/main/documentos/dise%C3%B1o/Pagina%20inicio%20wireframe.png)
+
+PagProductos2 Wireframe
+
+![Image text](https://github.com/Ramapascual/Grupo_4_Trabajo_Final/blob/main/documentos/dise%C3%B1o/Productos%202.png)
+
+Detalle de productos
+
+![Image text](https://github.com/Ramapascual/Grupo_4_Trabajo_Final/blob/main/documentos/dise%C3%B1o/Detalle%20de%20producto.png)
+
+Detalle de productos 2 Wireframe
+
+![Image text](https://github.com/Ramapascual/Grupo_4_Trabajo_Final/blob/main/documentos/dise%C3%B1o/Wireframe%20producto%20y%20sus%20detalles.png)
