@@ -1,0 +1,1 @@
+Soy Guadalupe Martinez Piquera, tengo 19 años, soy de Tucumán; estudié por un año la carrera de Linceciatura en relaciones internacionales pero la dejé porque no me veía a futuro en eso. Es mi primera vez con algo relacionado a a programación.

@@ -1,0 +1,3 @@
+Soy Andrés Ibarra. Graduado como ingeniero industrial, pero... creería que me equivoqué de carrera. Trabajo como ingeniero de soporte para una empresa de seguridad electrónica española. Me gustan los videojuegos y viajar. Vivo en Bogotá, Colombia y en octubre me mudaré a España.
+
+He hecho a medias cursos de desarrollo web y pendientes por empezar unos en android y iOS, entre otros. Actualmente estudio en paralelo desarrollo de aplicaciones móviles y Python.
