@@ -1,7 +1,7 @@
 HOME
 ![Image text](https://github.com/Ramapascual/Grupo_4_Trabajo_Final/blob/main/documentos/dise%C3%B1o/Home.png)
 
-Home wirefram
+Home wireframe
 
 ![Image text](https://github.com/Ramapascual/Grupo_4_Trabajo_Final/blob/main/documentos/dise%C3%B1o/Home%20wireframe.png)
 
@@ -13,6 +13,6 @@ Register wireframe
 
 ![Image text](https://github.com/Ramapascual/Grupo_4_Trabajo_Final/blob/main/documentos/dise%C3%B1o/Register.png)
 
-CheckOut
+CheckOut Wireframe
 
 ![Image text](https://github.com/Ramapascual/Grupo_4_Trabajo_Final/blob/main/documentos/dise%C3%B1o/Checkout%20wireframe%20rama.png)
