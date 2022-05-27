@@ -1,0 +1,3 @@
+Mi nombre es Santiago Paez Toledo, naci el 10/10/2001, cerca del atentando a las torres gemelas y de la crisis economica que sufrimos en nuestro pais. Naci en San Miguel, Buenos Aires, al mediodia.
+Soy hincha de boca juniors desde niño, me gusta jugar videojuegos, hacer deportes, comer y charlar con amigos.
+Mi objetivo con este curso es desarrollarme como un buen programador y a futuro poder tener un buen trabajo gracias al curso Full Stack de DH.
