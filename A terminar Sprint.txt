@@ -1,0 +1,5 @@
+-terminar bocetos y wireframes
+
+
+-1 pasar los bocetos, wireframes, a carpetas.md
+
