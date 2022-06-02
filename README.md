@@ -7,3 +7,4 @@
 3. [***LOGO***](documentos/diseño/logo.md)
 4. [***COLORES***](documentos/diseño/colores.md)
 5. [***BOCETO***](documentos/diseño/boceto.md)
+6. [***EQUIPO***](documentos/equipo.md) ]
