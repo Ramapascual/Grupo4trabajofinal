@@ -1,2 +1,2 @@
 # equipo 
-+ (Andres Ibarra)[./equipo/AndresIbarra.md]
++ [Andres Ibarra](./equipo/AndresIbarra.md)
