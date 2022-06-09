@@ -1,2 +1,1 @@
-HOME
-![Image text](https://github.com/Ramapascual/Grupo_4_Trabajo_Final/blob/main/documentos/dise%C3%B1o/Home.png)
+ [Wireframe.grupo4](https://www.figma.com/file/cBiYQ65xN3NCT8W5k2uwyu/Wireframe-Ramiro.pascual?node-id=0%3A1)
