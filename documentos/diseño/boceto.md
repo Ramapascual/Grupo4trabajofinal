@@ -1,3 +1,5 @@
 Boceto del Home
 
-![Image text](https://github.com/Ramapascual/Grupo_4_Trabajo_Final/blob/main/documentos/dise%C3%B1o/Home%20boceto.png)
+![Home landing page]() Al presionar el botón central se ve el boceto que sigue
+
+[Home]()
