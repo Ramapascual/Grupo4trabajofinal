@@ -3,8 +3,9 @@
 ### Vas a encontrar todo tipo de herramienta necesaria para comenzar a stremear o si ya lo haces, mejorar tu set-up.
 
 1. [***WIREFRAME***](documentos/diseño/wireframe.md)
-2. [***MARCA***](documentos/diseño/marca.md)
-3. [***LOGO***](documentos/diseño/logo.md)
-4. [***COLORES***](documentos/diseño/colores.md)
-5. [***BOCETO***](documentos/diseño/boceto.md)
-6. [***EQUIPO***](documentos/equipo.md) ]
+2. [***INSPIRACION***](documentos/diseño/Inspiracion.md)
+3. [***LOGO***](documentos/diseño/Logo.jpg)
+4. [***TIPOGRAFIAS***](documentos/diseño/tipografias.md)
+5. [***COLORES***](documentos/diseño/colores.md)
+6. [***BOCETO***](documentos/diseño/boceto.md)
+7. [***EQUIPO***](documentos/equipo.md) 
