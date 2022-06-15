@@ -1,0 +1,29 @@
+*{
+    border: none;
+    box-sizing: border-box;
+    margin: 0;
+    outline: none;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+}
+
+.bg-image{
+    background-attachment: fixed;
+    background-color: #222430;
+    background-image: url("/assets/bg-texture-01.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+a{
+    font-family: 'Consolas', 'Courier New', monospace;
+}
+
+img{
+    width: 100%;
+}
