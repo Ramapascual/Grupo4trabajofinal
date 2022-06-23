@@ -1,0 +1,93 @@
+@keyframes blink {
+    0%, 100% {opacity: 1;}
+    50% {opacity: 0;}
+  }
+
+@keyframes imageChanger {
+    0%{
+        background-image: url('/assets/streamer.jpg');
+    }
+
+    34%{
+        background-image: url('/assets/girl.jpg');
+    }
+
+    51%{
+        background-image: url('/assets/streamerGuy.jpg');
+    }
+
+    68%{
+        background-image: url('/assets/gamer.jpg');
+    }
+
+    85%{
+        background-image: url('/assets/VR.jpg');
+    }
+
+    100%{
+        background-image: url('/assets/streamGuy.jpg');
+    }
+}
+
+.main-home{
+    display: none;
+    margin: 8%;
+}
+
+#intro{
+    background-color: #8326ef;
+    border-radius: 0.5em;
+    justify-content: center;
+    opacity: 70%;
+    padding: 3%;
+}
+
+.heading-title{
+    color: #cffbff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.typing-effect{
+    color: #29d5e2;
+    font-size: 1.2rem;
+    font-weight: 500;
+    justify-content: center;
+    text-align: justify;
+}
+
+.typing-effect::after {
+    content: "|";
+    color: #29d5e2;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    animation:  none;
+  }
+  
+  .showAnim.typing-effect::after {
+    animation: blink 1s step-end infinite;
+  }
+
+.image-loop{
+    animation: imageChanger 25s infinite alternate ease-in-out;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 00.5em;
+    min-height: 40vh;
+    max-height: 50vh;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.categories{
+    background-color: #cffbff;
+    border-radius: 0.5em;
+    justify-content: center;
+    opacity: 70%;
+    padding: 3%;
+}

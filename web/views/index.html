@@ -4,10 +4,128 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Lobster&family=Open+Sans:wght@300;400;500;600;700;800&family=Pacifico&family=Yellowtail&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/styles.css" type="text/css">
+    <link rel="stylesheet" href="/css/indexMobile.css" type="text/css">
     <title>Home</title>
 </head>
 <body class="bg-image">
-    
+    <section class="landing-section" id="landing-section">
+        <figure class="logo-landing">
+            <img src="/assets/streamixLogo.svg" alt="brand logo">
+            <h1 class="landing-brand">STREAMIX</h1>
+        </figure>
+        <h2 class="landing-heading">Todo para tus streams!</h2>
+        <button type="button" class="landing-button" id="landing-btn" onclick="landingButton()">Entra ya!</button>
+        <div>
+            <figure class="sponsorship"><img class="sponsor" src="/assets/logitech.png" alt="Logitech-logo"><img class="sponsor" src="/assets/hyper-x-logo.png" alt="HyperXlogo"><img class="sponsor" src="/assets/Zowie_Logo.png" alt="ZowieLogo"><img class="sponsor" src="/assets/Elgato_logo.png" alt="ElGato"></figure>
+        </div>
+    </section>
+    <section class="main-home" id="intro">
+        <div class="heading-content">
+            <h4 class="heading-title">Enriquece tu contenido con</h4>
+            <span class="typing-effect" id="typing-effect"></span>
+            <figure>
+                <div class="image-loop"></div>
+            </figure>
+        </div>
+    </section>
+    <section class="main-home categories" id="cat1">
+        <h4>Dispositivos y herramientas</h4>
+        <span></span>
+        <figure>
+            <img src="" alt="">
+        </figure>
+        <div class="button"><a href="">Ver productos</a></div>
+    </section>
+    <section class="main-home categories" id="cat2">
+        <h4>Salud del streamer</h4>
+        <span></span>
+        <figure>
+            <img src="" alt="">
+        </figure>
+        <div class="button"><a href="">Ver productos</a></div>
+    </section>
+    <section class="main-home categories" id="cat3">
+        <h4>Muebles</h4>
+        <span></span>
+        <figure>
+            <img src="" alt="">
+        </figure>
+        <div class="button"><a href="">Ver productos</a></div>
+    </section>
+    <section class="main-home categories" id="cat4">
+        <h4>Canjeables</h4>
+        <span></span>
+        <figure>
+            <img src="" alt="">
+        </figure>
+        <div class="button"><a href="">Ver productos</a></div>
+    </section>
+    <script type="text/javascript">
+
+            const message1 = "Mercancía personalizable canjeable por tus espectadores";
+            const message2 = "Interacciones divertidas que promueven tu salud";
+            const message3 = "Dispositivos que faciliten tu transmisión";
+            const message4 = "Objetos para tu comodidad";
+
+            const messages = [message1, message2, message3, message4];
+
+            let typeText = document.querySelector(".typing-effect");
+            let isAdding = true;
+            let index = 0;
+            let textToBeTypedIndex = 0;
+            
+            function typing(){
+                setTimeout(function(){
+
+                    typeText.innerText = messages[textToBeTypedIndex].slice(0, index);
+
+                    if (isAdding) {
+      
+                        if (index > messages[textToBeTypedIndex].length) {
+        
+                        isAdding = false
+                        typeText.classList.add("showAnim");
+                        setTimeout(function () {
+                        typeText.classList.remove("showAnim");
+                        typing();
+                    }, 2000);
+                    return;
+                } else {
+                index++;
+                }
+            } else {
+                if (index === 0){
+                    isAdding = true;
+                    textToBeTypedIndex = (textToBeTypedIndex + 1) % messages.length;
+                }
+                else {
+                    index--;
+                }
+            }
+                typing();   
+            }, isAdding ? 120 : 60);
+        }
+
+
+            function landingButton(){
+            document.getElementById("landing-section").style.display ="none";
+            const intro = document.getElementById("intro");
+            const cat1 = document.getElementById("cat1");
+            const cat2 = document.getElementById("cat2");
+            const cat3 = document.getElementById("cat3");
+            const cat4 = document.getElementById("cat4");
+            intro.style.display ="flex";
+            cat1.style.display = "flex";
+            cat2.style.display = "flex";
+            cat3.style.display = "flex";
+            cat4.style.display = "flex";
+
+            typing();
+        }
+    </script>
 </body>
 </html>

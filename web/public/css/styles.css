@@ -15,8 +15,8 @@ body{
 .bg-image{
     background-attachment: fixed;
     background-color: #222430;
-    background-image: url("/assets/bg-texture-01.jpg");
-    background-position: center;
+    background-image: url('/assets/bg-texture-01.jpg');
+    background-position: top -50vh;
     background-size: cover;
 }
 
@@ -26,4 +26,64 @@ a{
 
 img{
     width: 100%;
+}
+
+/* Landing section */
+
+.landing-section{
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+
+.logo-landing{
+    width: 100%;
+}
+
+.logo-landing>img{
+    height: 10rem;
+    margin-top: 10vh;
+}
+
+.landing-brand{
+    color: #8326ef;
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.landing-heading{
+    color: #cffbff;
+    font-family: 'Lobster', cursive;
+    font-size: 2rem;
+    margin-bottom: 20rem;
+    margin-top: 1.5rem;
+    text-shadow: #29d5e2;
+}
+
+.landing-button{
+    background: #8326ef;
+    border-radius: 0.5em;
+    color: #cffbff;
+    font-size: 1.3rem;
+    padding: 1em;
+    position: absolute;
+    text-transform: uppercase;
+    top: 55vh;
+    width: 12rem;
+}
+
+.sponsorship{
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.sponsor{
+    width: 15%;
 }
