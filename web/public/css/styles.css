@@ -43,13 +43,13 @@ img{
 }
 
 .logo-landing>img{
-    height: 10rem;
+    height: 8rem;
     margin-top: 10vh;
 }
 
 .landing-brand{
     color: #8326ef;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 400;
     text-align: center;
 }
@@ -57,8 +57,7 @@ img{
 .landing-heading{
     color: #cffbff;
     font-family: 'Lobster', cursive;
-    font-size: 2rem;
-    margin-bottom: 20rem;
+    font-size: 1.5rem;
     margin-top: 1.5rem;
     text-shadow: #29d5e2;
 }
@@ -67,11 +66,12 @@ img{
     background: #8326ef;
     border-radius: 0.5em;
     color: #cffbff;
+    font-family: 'Lato', sans-serif;
     font-size: 1.3rem;
     padding: 1em;
     position: absolute;
     text-transform: uppercase;
-    top: 55vh;
+    top: 50vh;
     width: 12rem;
 }
 
@@ -81,7 +81,9 @@ img{
     flex-wrap: wrap;
     gap: 1em;
     justify-content: center;
-    margin-top: 2rem;
+    position: relative;
+    top: 35vh;
+    width: 100%;
 }
 
 .sponsor{

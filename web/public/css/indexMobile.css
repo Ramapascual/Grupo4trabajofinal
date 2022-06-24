@@ -49,7 +49,6 @@
     font-weight: 400;
     justify-content: center;
     margin-bottom: 0.5rem;
-    text-align: center;
 }
 
 .typing-effect{
@@ -87,7 +86,71 @@
 .categories{
     background-color: #cffbff;
     border-radius: 0.5em;
+    flex-direction: column;
     justify-content: center;
-    opacity: 70%;
+    opacity: 60%;
     padding: 3%;
+}
+
+.cat-tittle{
+    color: #8326ef;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    order: 1;
+}
+
+.cat-description{
+    font-size: 1rem;
+    text-align: justify;
+    margin-bottom: 1rem;
+    order: 3;
+}
+
+.cat-image{
+    border-radius: 0.5em;
+    order: 2;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.cat-video{
+    align-content: center;
+    justify-content: center;
+    width: 18rem;
+}
+
+.cat-video>video{
+    border-radius: 0.5em;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    object-fit: contain;
+    order: 2;
+    width: 100%;
+}
+
+.cat-button{
+    background-color: #8326ef;
+    border-radius: 0.5em;
+    box-shadow: black 3px;
+    color: #29d5e2;
+    display: flex;
+    font-size: 1rem;
+    justify-content: center;
+    left: 4rem;
+    order: 4;
+    padding: 0.5rem;
+    position: relative;
+    text-align: center;
+    width: 50%;
+    z-index: 5;
+}
+.cat-button>a{
+    color: #cffbff;
+    font-family: 'Lato', sans-serif;
+}
+
+::-webkit-scrollbar{
+    display: none;
 }
