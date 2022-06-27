@@ -118,7 +118,7 @@ header{
     display: none;
 }
 
-.collapse-start:target + .collapsed{
+.collapse-start:target + .collapsed, .menu-btn-wrapper:has(.nav-btn>.collapse-start:target) ~ .collapsible-body{
     display: flex;
 }
 
@@ -132,7 +132,6 @@ header{
 }
 
 .collapsible-body{
-    display: flex; /* Temporal mientras se termina el maquetado y al buscar la forma de desplegar con el botón de menú*/
     gap: 0.5rem;
     width: 50%;
 }
