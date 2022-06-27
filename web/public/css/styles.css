@@ -71,8 +71,13 @@ img{
     padding: 1em;
     position: absolute;
     text-transform: uppercase;
+    transition: background-color 1s;
     top: 50vh;
     width: 12rem;
+}
+
+.landing-button:hover{
+    background-color: #29d5e2;
 }
 
 .sponsorship{

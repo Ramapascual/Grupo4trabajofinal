@@ -3,4 +3,19 @@
     .collapsible-body{
         gap: 2.5rem;
     }
+
+    .collapsible-body>a, .collapsible-body>a>span{
+        border-radius: 1em;
+        transition: background-color 0.5s, color 0.5s;
+        padding: 0.5rem;
+    }
+
+    .collapsible-body>a:hover, .collapsible-body>a:hover>span{
+        background-color: #8326ef;
+        color: #cffbff;
+    }
+
+    .search-bar{
+        top: 3.8rem;
+    }
 }
