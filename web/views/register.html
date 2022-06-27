@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/register.css">
+</head>
+
+<body>
+    <header>
+            <div class="bg-image">
+        <figure class="logo-landing">
+            <img src="/assets/streamixLogo.svg" alt="brand logo">
+            <h1 class="landing-brand">STREAMIX</h1>
+            
+    
+        </figure>
+        <h2 class="landing-heading">Todo para tus streams!</h2>
+    
+        
+    <form action="/register" method="post" autocomplete="off" role="search" class="formulario">
+        <figure class="register-image">
+            <img src="/assets/register.png" alt="register logo">
+        </figure>
+        <div class="control-formulario">
+            <input type="text" name="nombre" placeholder="Nombre y apellido" minlength="3" class="control" required>
+        </div>
+        <div class="control-formulario">
+            <input type="text" name="usuario" placeholder="Nombre de usuario" class="control" required>
+        </div>
+        <div class="control-formulario">
+            <input type="email" name="email" placeholder="E-mail" class="control" required>
+        </div>
+        <div class="control-formulario">
+            <h3 class="Fecha"> Fecha de nacimiento :</h3>
+            <input type="date" name="edad" min='1900-01-01' max="2020-01-01" class="control">
+        </div>
+
+        <div class="control-formulario">
+            <input type="password" name="contrasena" placeholder="Contraseña" class="control" required>
+        </div>
+        <div class="control-formulario">
+            <input type="password" name="Ccontrasena" placeholder="Confirmar contraseña" class="control" required>
+        </div>
+        <button type="submit" class="boton-formulario">Registrar</button>
+    </form>
+</header>
+
+    <footer>
+        <div class="contenedor-footer">
+            
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+.logo-landing>img {
+    position: relative;
+    top: -60px;
+    left: 39%;
+}
+
+.landing-brand {
+    position: relative;
+    top: -170px;
+    text-align: center;
+    left: 80px;
+}
+
+.landing-heading {
+    position: relative;
+    top: -188px;
+    left: 90px;
+
+    text-align: center;
+}
+
+.bg-image {
+    position: relative;
+    height: 100vh;
+}
+
+.formulario {
+    position: relative;
+    text-align: center;
+    margin-top: 180px;
+}
+
+.control {
+    position: relative;
+    width: 30%;
+    padding: 15px;
+    display: flex;
+    margin: 30px;
+    align-items: center;
+    left: 35%
+}
+
+.Fecha {
+    position: relative;
+    right: 196px;
+    font-size: 18px;
+}
+
+input.control {
+    border: #cffbff 3px solid;
+}
+
+.boton-formulario {
+    padding: 10px;
+    width: 6%;
+}
+
+button.boton-formulario {
+    border-radius: 20%;
+}
+
+
+
+.register-image {
+    margin-bottom: 100px;
+    text-align: left;
+
+}
+
+img{
+    width: 10%;
+    position: absolute
+}
+
+.register-image{
+    position: relative;
+    left: 37%;
+    top: -280px;
+    
+}
