@@ -1,0 +1,65 @@
+@media screen and (min-width: 1200px){
+
+    #intro{
+        height: 25rem;
+    }
+
+    .heading-content{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+
+    .heading-tittle, .typing-effect{
+        width: 40%;
+    }
+
+    .heading-tittle{
+        font-size: 2rem;
+        height: fit-content;
+    }
+
+    .typing-effect{
+        font-size: 1.4rem;
+        order: 1;
+        position: relative;
+        top: -20rem;
+    }
+
+    .heading-content>figure{
+        position: relative;
+        right: -2rem;
+        top: -1.5rem;
+        width: 50%;
+    }
+
+    .image-loop{
+        order: -1;
+        width: 100%;
+    }
+
+    .categories{
+        width: 90%;
+    }
+
+    .cat-tittle{
+        font-size: 2rem;
+    }
+
+    .cat-content>figure{
+        order: 1;
+        width: 40%;
+    }
+
+    .cat-video{
+        order: 1;
+        width: 40%;
+    }
+
+    .cat-description{
+        font-size: 1.5rem;
+        order: 1;
+        margin-right: 10%;
+        width: 50%;
+    }
+}

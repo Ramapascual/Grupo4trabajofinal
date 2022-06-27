@@ -29,9 +29,19 @@
     }
 }
 
-.main-home{
+.mainHome{
     display: none;
-    margin: 8%;
+}
+
+.displayToggle{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5%;
+}
+
+main{
+    justify-content: center;
+    width: 90%;
 }
 
 #intro{
@@ -40,9 +50,10 @@
     justify-content: center;
     opacity: 70%;
     padding: 3%;
+    width: 90%;
 }
 
-.heading-title{
+.heading-tittle{
     color: #cffbff;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.5rem;
@@ -72,10 +83,14 @@
     animation: blink 1s step-end infinite;
   }
 
+  .heading-content>figure{
+    width: 100%;
+  }
+
 .image-loop{
     animation: imageChanger 25s infinite alternate ease-in-out;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100% auto;
     border-radius: 00.5em;
     min-height: 40vh;
     max-height: 50vh;
@@ -84,49 +99,60 @@
 }
 
 .categories{
+    align-content: center;
     background-color: #cffbff;
     border-radius: 0.5em;
     flex-direction: column;
     justify-content: center;
     opacity: 60%;
     padding: 3%;
+    width: 90%;
+}
+
+.cat-content{
+    align-items: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    width: 90%;
 }
 
 .cat-tittle{
     color: #8326ef;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.cat-description{
+    font-size: 0.8rem;
+    text-align: justify;
     margin-bottom: 1rem;
     order: 1;
 }
 
-.cat-description{
-    font-size: 1rem;
-    text-align: justify;
-    margin-bottom: 1rem;
-    order: 3;
-}
-
 .cat-image{
     border-radius: 0.5em;
-    order: 2;
+    order: -1;
     margin-bottom: 1rem;
     margin-top: 1rem;
 }
 
 .cat-video{
-    align-content: center;
-    justify-content: center;
-    width: 18rem;
+    align-items: center;
+    justify-items: center;
+    width: 90%;
 }
 
 .cat-video>video{
     border-radius: 0.5em;
     margin-bottom: 1rem;
     margin-top: 1rem;
+    left: 1rem;
     object-fit: contain;
-    order: 2;
+    order: -1;
+    position: relative;
     width: 100%;
 }
 
@@ -138,7 +164,7 @@
     display: flex;
     font-size: 1rem;
     justify-content: center;
-    left: 4rem;
+    left: 25%;
     order: 4;
     padding: 0.5rem;
     position: relative;

@@ -5,10 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Lobster&family=Open+Sans:wght@300;400;500;600;700;800&family=Yellowtail&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Lobster&family=Open+Sans:wght@300;400;500;600;700;800&family=Yellowtail&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="/css/styles.css" type="text/css">
+    <link rel="stylesheet" href="/css/headermobile.css" type="text/css">
+    <link rel="stylesheet" href="/css/headerTablet.css" type="text/css">
+    <link rel="stylesheet" href="/css/headerDesktop.css" type="text/css">
+    <link rel="stylesheet" href="/css/footerMobile.css" type="text/css">
+    <link rel="stylesheet" href="/css/footerTablet.css" type="text/css">
+    <link rel="stylesheet" href="/css/footerDesktop.css" type="text/css">
     <link rel="stylesheet" href="/css/indexMobile.css" type="text/css">
+    <link rel="stylesheet" href="/css/indexTablet.css" type="text/css">
+    <link rel="stylesheet" href="/css/indexDesktop.css" type="text/css">
     <title>Home</title>
 </head>
 <body class="bg-image">
@@ -23,53 +32,92 @@
             <figure class="sponsorship"><img class="sponsor" src="/assets/logitech.png" alt="Logitech-logo"><img class="sponsor" src="/assets/hyper-x-logo.png" alt="HyperXlogo"><img class="sponsor" src="/assets/Zowie_Logo.png" alt="ZowieLogo"><img class="sponsor" src="/assets/Elgato_logo.png" alt="ElGato"></figure>
         </div>
     </section>
-    <section class="main-home" id="intro">
-        <div class="heading-content">
-            <h4 class="heading-title">Enriquece tu contenido con</h4>
-            <span class="typing-effect" id="typing-effect"></span>
-            <figure>
-                <div class="image-loop"></div>
-            </figure>
+    <header class="mainHome" id="homeHeader">
+        <div class="header-wrapper">
+            <div class="header-logo"><a href="/"><img src="/assets/streamixLogo.svg" alt="logo"></a></div>
+            <div class="header-branding">
+                <h1 class="header-brand">STREAMIX</h1>
+                <h2 class="header-heading">Todo para tus streams!</h2>
+            </div>
         </div>
-    </section>
-    <section class="main-home categories" id="cat1">
-        <div class="cat-content">
-            <h4 class="cat-tittle">Dispositivos y herramientas</h4>
-            <span class="cat-description">Encuentra todo lo necesario para hacer tu transmisión en alta calidad de video y sonido, con baja latencia. Cámaras, micrófonos, capturadoras y más...</span>
-            <figure>
-                <img class="cat-image" src="/assets/devices.jpg" alt="Devices">
-            </figure>
-            <div class="cat-button"><a href="">Ver productos</a></div></div>
-    </section>
-    <section class="main-home categories" id="cat2">
-        <div class="cat-content">
-            <h4 class="cat-tittle">Salud del streamer</h4>
-            <span class="cat-description">Cuida del recurso más importante en tu transmisión... <i>Tú!</i></span>
-            <figure>
-                <img class="cat-image" src="/assets/health.jpg" alt="Health">
-            </figure>
-            <div class="cat-button"><a href="">Ver productos</a></div>
-        </div>
-    </section>
-    <section class="main-home categories" id="cat3">
-        <div class="cat-content">
-            <h4 class="cat-tittle">Muebles</h4>
-            <span class="cat-description">Haz de tu espacio de transmisión tan cómodo y conveniente que no necesites levantarte para nada. Encuentra mini heladeras, sillas, mueblería y accesorios aquí</span>
-            <figure>
-                <img class="cat-image" src="/assets/space.jpg" alt="Furniture">
-            </figure>
-            <div class="cat-button"><a href="">Ver productos</a></div>
-        </div>
-    </section>
-    <section class="main-home categories" id="cat4">
-        <div class="cat-content">
-            <h4 class="cat-tittle">Canjeables</h4>
-            <span class="cat-description">Recompensa a tus espectadores con gran variedad de artículos canjeables, crea tu marca y fideliza</span>
-            <div class="cat-video"><video src="/assets/merchVideo.mp4" autoplay loop></video>
+        <div class="header-wrapper2">
+            <form action="/" method="get" class="search-bar">
+                <fieldset class="input-field">
+                    <div class="search-btn" type="submit"><span class="material-icons">search</span></div>
+                    <input type="text" name="search">
+                </fieldset>
+            </form>
+            <div class="collapsible nav-menu">
+                <div class="menu-btn-wrapper">
+                    <div class="collapsible-header nav-btn">
+                        <a id="hideNavs" href="#hideNavs" class="collapse-start"><span class="material-icons">menu</span></a>
+                        <a id="showNavs" href="#showNavs" class="collapsed"><span class="material-icons">menu_open</span></a>
+                    </div>
+                </div>
+                <nav class="collapsible-body nav-body">
+                    <a href="">Nosotros</a>
+                    <a href="">Contáctanos</a>
+                </nav>
+                <nav class="collapsible-body nav-body2">
+                    <a href="">Productos</a>
+                    <a href=""><span class="material-icons">shopping_cart</span>Carrito</a>
+                    <a href=""><span class="material-icons">account_circle</span>Entra</a>
+                </nav> 
             </div>            
-            <div class="cat-button"><a href="">Ver productos</a></div>
         </div>
-    </section>
+    </header>
+    <main class="mainHome" id="homeMain">
+        <section class="mainHome" id="intro">
+            <div class="heading-content">
+                <h4 class="heading-tittle">Enriquece tu contenido con</h4>
+                <span class="typing-effect" id="typing-effect"></span>
+                <figure>
+                    <div class="image-loop"></div>
+                </figure>
+            </div>
+        </section>
+        <section class="mainHome categories" id="cat1">
+            <div class="cat-content">
+                <h4 class="cat-tittle">Dispositivos y herramientas</h4>
+                <span class="cat-description">Encuentra todo lo necesario para hacer tu transmisión en alta calidad de video y sonido, con baja latencia. Cámaras, micrófonos, capturadoras y más...</span>
+                <figure>
+                    <img class="cat-image" src="/assets/devices.jpg" alt="Devices">
+                </figure>
+                <div class="cat-button"><a href="">Ver productos</a></div></div>
+        </section>
+        <section class="mainHome categories" id="cat2">
+            <div class="cat-content">
+                <h4 class="cat-tittle">Salud del streamer</h4>
+                <span class="cat-description">Cuida del recurso más importante en tu transmisión... <i>Tú!</i></span>
+                <figure>
+                    <img class="cat-image" src="/assets/health.jpg" alt="Health">
+                </figure>
+                <div class="cat-button"><a href="">Ver productos</a></div>
+            </div>
+        </section>
+        <section class="mainHome categories" id="cat3">
+            <div class="cat-content">
+                <h4 class="cat-tittle">Muebles</h4>
+                <span class="cat-description">Haz de tu espacio de transmisión tan cómodo y conveniente que no necesites levantarte para nada. Encuentra mini heladeras, sillas, mueblería y accesorios aquí</span>
+                <figure>
+                    <img class="cat-image" src="/assets/space.jpg" alt="Furniture">
+                </figure>
+                <div class="cat-button"><a href="">Ver productos</a></div>
+            </div>
+        </section>
+        <section class="mainHome categories" id="cat4">
+            <div class="cat-content">
+                <h4 class="cat-tittle">Canjeables</h4>
+                <span class="cat-description">Recompensa a tus espectadores con gran variedad de artículos canjeables, crea tu marca y fideliza</span>
+                <div class="cat-video"><video src="/assets/merchVideo.mp4" autoplay loop></video>
+                </div>            
+                <div class="cat-button"><a href="">Ver productos</a></div>
+            </div>
+        </section>
+    </main>
+    <footer class="mainHome" id="homeFooter">
+        <span class="copyright">Grupo 4 Digital House&copy; 2022</span>
+    </footer>
     <script type="text/javascript">
 
             const message1 = "Mercancía personalizable canjeable por tus espectadores";
@@ -116,10 +164,19 @@
             }, isAdding ? 120 : 60);
         }
 
+        function classRemover(element, className){
+            element.classList.remove(className);
+        }
+
+        function classAdder(element, className){
+            element.classList.add(className);
+        }
+
+        let hiddenElements = document.getElementsByClassName("mainHome");
 
             function landingButton(){
             document.getElementById("landing-section").style.display ="none";
-            const intro = document.getElementById("intro");
+            /* const intro = document.getElementById("intro");
             const cat1 = document.getElementById("cat1");
             const cat2 = document.getElementById("cat2");
             const cat3 = document.getElementById("cat3");
@@ -128,7 +185,35 @@
             cat1.style.display = "flex";
             cat2.style.display = "flex";
             cat3.style.display = "flex";
-            cat4.style.display = "flex";
+            cat4.style.display = "flex"; */
+
+            
+            if(hiddenElements.length > 0) {
+                for(let i = 0; i < hiddenElements.length; i++) {
+                    classAdder(hiddenElements[i], "displayToggle");
+                }
+
+                for(let i = 0; i < hiddenElements.length; i++){
+                    classRemover(hiddenElements[i], "mainHome");
+                }
+            } /* if(hiddenElements.length > 0){
+                
+                for(let i = 0; i < hiddenElements.length; i++) {
+                    classAdder(hiddenElements[i], "displayToggle");
+                }
+
+                for(let i = 0; i <script hiddenElements.length; i++){
+                    classRemover(hiddenElements[i], "mainHome");
+                }
+            }
+
+            classRemover(document.getElementById("cat1"), "mainHome");
+            classRemover(document.getElementById("homeFooter"), "mainHome"); */
+                
+
+            console.log(hiddenElements);
+            console.log(hiddenElements.length);
+
 
             typing();
         }

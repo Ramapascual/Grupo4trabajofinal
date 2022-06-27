@@ -1,0 +1,32 @@
+@media screen and (min-width: 650px) {
+
+    #intro{
+        width: 100%;
+    }
+
+    .heading-content{
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .categories{
+        margin: 0.5rem;
+        width: 45%;
+    }
+
+    .cat-content{
+        height: 100%;
+    }
+
+    .cat-tittle{
+        width: 100%;
+    }
+
+    .cat-video{
+        width: 14rem;
+    }
+
+    .cat-video>video{
+        left: 0;
+    }
+}

@@ -1,0 +1,19 @@
+footer{
+    align-items: flex-end;
+    background-color: #8326ef;
+    border-radius: 0.5em;
+    display: flex;
+    height: 3rem;
+    justify-content: center;
+}
+
+footer>span{
+    color: #cffbff;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+#homeFooter{
+    margin-bottom: 0;
+}

@@ -10,4 +10,4 @@ app.use(express.static(publicFolder));
 
 app.get('/', (req, res) => {
     res.sendFile(path.resolve(publicFolder, '../views/index.html'));
-})
+});

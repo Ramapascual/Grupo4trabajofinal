@@ -1,0 +1,45 @@
+@media screen and (min-width: 650px){
+
+    .header-brand{
+        position: relative;
+        top: 1.5rem;
+    }
+
+    .header-heading{
+        display: block;
+        left: -3rem;
+        position: relative;
+        top: 1.5rem;
+    }
+
+    .header-wrapper2{
+        width: 100%;
+    }
+    
+    .search-bar{
+        position: relative;
+        top: 3rem;
+    }
+
+    .collapsible-body{
+        justify-content: center;
+    }
+
+    .nav-body{
+        left: -2rem;
+        position: relative;
+    }
+
+    .nav-body2{
+        position: relative;
+        right: -2rem;
+    }
+
+    .menu-btn-wrapper {
+        display: none;
+    }
+
+    .collapsible-body>a{
+        font-size: 0.8rem;
+    }
+}
