@@ -45,10 +45,10 @@ main{
 }
 
 #intro{
-    background-color: #8326ef;
+    background-color: #8426efb9;
     border-radius: 0.5em;
     justify-content: center;
-    opacity: 70%;
+    /* opacity: 70%; */
     padding: 3%;
     width: 90%;
 }
@@ -100,11 +100,10 @@ main{
 
 .categories{
     align-content: center;
-    background-color: #cffbff;
+    background-color: #cffbffb9;
     border-radius: 0.5em;
     flex-direction: column;
     justify-content: center;
-    opacity: 60%;
     padding: 3%;
     width: 90%;
 }
