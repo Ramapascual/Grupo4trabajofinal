@@ -53,10 +53,12 @@ input.control {
 .boton-formulario {
     padding: 10px;
     width: 6%;
+    
 }
 
 button.boton-formulario {
-    border-radius: 20%;
+    border-radius: 0.5em;
+    
 }
 
 
@@ -78,3 +80,4 @@ img{
     top: -280px;
     
 }
+

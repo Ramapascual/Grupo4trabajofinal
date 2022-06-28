@@ -57,7 +57,7 @@ button.boton-formulario{
     margin-left: 40px;
     margin-right: 40px;
     text-align: center;
-    border-radius: 20%;
+    border-radius: 0.5em;
     
 }
 input.control{
@@ -85,13 +85,15 @@ img{
     width: 18%;
 }
 
-.fa-solid.fa-id-card{
+i.fa-solid.fa-key{
 position: relative;
+top:70px;
 
 }
 .fa-solid, .fas{
     right: 350px;
-    top: 30px;
+    top: 34px;
+    position: relative
 }
 
 
