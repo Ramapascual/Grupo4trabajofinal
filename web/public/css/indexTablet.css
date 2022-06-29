@@ -1,12 +1,24 @@
 @media screen and (min-width: 650px) {
 
     #intro{
+        height: 40rem;
         width: 100%;
     }
 
     .heading-content{
         justify-content: flex-start;
         width: 100%;
+    }
+
+    .heading-content>figure{
+        height: 30rem;
+        left: 20%;
+        position: relative;
+        width: 60%;
+    }
+
+    .image-loop{
+        background-size: 100%;
     }
 
     .categories{

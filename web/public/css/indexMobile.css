@@ -47,8 +47,8 @@ main{
 #intro{
     background-color: #8426efb9;
     border-radius: 0.5em;
+    height: 25rem;
     justify-content: center;
-    /* opacity: 70%; */
     padding: 3%;
     width: 90%;
 }
@@ -84,6 +84,7 @@ main{
   }
 
   .heading-content>figure{
+    height: 14rem;
     width: 100%;
   }
 
@@ -91,9 +92,8 @@ main{
     animation: imageChanger 25s infinite alternate ease-in-out;
     background-repeat: no-repeat;
     background-size: 100% auto;
-    border-radius: 00.5em;
-    min-height: 40vh;
-    max-height: 50vh;
+    border-radius: 0.5em;
+    height: 100%;
     margin-bottom: 1rem;
     margin-top: 2rem;
 }

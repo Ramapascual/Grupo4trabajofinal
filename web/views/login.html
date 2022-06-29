@@ -5,53 +5,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login de Usuario</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-    <script src="https://kit.fontawesome.com/dbdd42b504.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Lobster&family=Open+Sans:wght@300;400;500;600;700;800&family=Yellowtail&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css" type="text/css">
+    <link rel="stylesheet" href="/css/headerMobile.css" type="text/css">
+    <link rel="stylesheet" href="/css/headerTablet.css" type="text/css">
+    <link rel="stylesheet" href="/css/headerDesktop.css" type="text/css">
+    <link rel="stylesheet" href="/css/footerMobile.css" type="text/css">
+    <link rel="stylesheet" href="/css/footerTablet.css" type="text/css">
+    <link rel="stylesheet" href="/css/footerDesktop.css" type="text/css">
+    <link rel="stylesheet" href="/css/loginMobile.css" type="text/css">
+    <link rel="stylesheet" href="/css/loginTablet.css" type="text/css">
 </head>
 
-<body>
-    <header>
-        <div class="bg-image">
-    <figure class="logo-landing">
-        <img src="/assets/streamixLogo.svg" alt="brand logo">
-        <h1 class="landing-brand">STREAMIX</h1>
-
-    </figure>
-    <h2 class="landing-heading">Todo para tus streams!</h2>
-
-
-    <form action="/" method="GET" class="formulario">
-    <figure class="logo-user">
-        <img src="/assets/user.png" alt="user logo">
-    </figure>
-        <div class="control-formulario">
-            <i class="fa-solid fa-id-card"></i>
-            <input type="text" name="nombreUsuario" placeholder="Nombre de usuario" class="control" required>
+<body class="bg-image">
+    <header class="not-main-Home">
+        <div class="header-wrapper">
+            <div class="header-logo"><a href="/"><img src="/assets/streamixLogo.svg" alt="logo"></a></div>
+            <div class="header-branding">
+                <h1 class="header-brand">STREAMIX</h1>
+                <h2 class="header-heading">Todo para tus streams!</h2>
+            </div>
         </div>
-        <div class="control-formulario">
-            <i class="fa-solid fa-key"></i>
-            <input type="password" name="contrasena" placeholder="Contraseña" class="control1" required>
+        <div class="header-wrapper2">
+            <form action="/" method="get" class="search-bar">
+                <fieldset class="input-field">
+                    <div class="search-btn" type="submit"><span class="material-icons">search</span></div>
+                    <input type="text" name="search">
+                </fieldset>
+            </form>
+            <div class="collapsible nav-menu">
+                <div class="menu-btn-wrapper">
+                    <div class="collapsible-header nav-btn">
+                        <a id="hideNavs" href="#hideNavs" class="collapse-start"><span class="material-icons">menu</span></a>
+                        <a id="showNavs" href="#showNavs" class="collapsed"><span class="material-icons">menu_open</span></a>
+                    </div>
+                </div>
+                <nav class="collapsible-body nav-body">
+                    <a href="">Nosotros</a>
+                    <a href="">Contáctanos</a>
+                </nav>
+                <nav class="collapsible-body nav-body2">
+                    <a href="">Productos</a>
+                    <a href=""><span class="material-icons">shopping_cart</span>Carrito</a>
+                    <a href="./login.html"><span class="material-icons">account_circle</span>Entra</a>
+                </nav> 
+            </div>            
         </div>
-        <button type="submit" class="boton-formulario">Restablecer</button>
-        <button type="submit" class="boton-formulario">Login</button>
-        <div class="rg" >
-        <a class="NewPerfil">Eres nuevo? Regístrate </a>
-        <a class="register" href="/register">aquí</a>
-    </div>
-       
-    </form>
-</header>
-
-    <footer>
-        <div class="contenedor-footer">
-        
+    </header>
+    <main class="not-main-Home">
+        <form action="/" method="GET" class="main-form">
+        <div class="logo-user">
+            <span class="material-icons">account_circle</span>
+        </div>
+            <fieldset class="form-control">
+                <span class="material-icons">badge</span>
+                <input type="text" name="nombreUsuario" placeholder="Nombre de usuario" class="username-control" minlength="4" required>
+            </fieldset>
+            <fieldset class="form-control last-field">
+                <span class="material-icons password-icon">key</span>
+                <input type="password" name="contrasena" placeholder="Contraseña" class="password-control" minlength="8" required>
+            </fieldset>
+            <div class="btn-group">
+                <button type="reset" class="form-btn">Restablecer</button>
+                <button type="submit" class="form-btn">Login</button>
+            </div>            
+            <div class="register-wrapper" >
+                <span class="NewPerfil">Eres nuevo? Regístrate <a class="register" href="./register.html">aquí</a></span>                
+            </div>
+        </form>
+    </main>
+    <footer class="login-footer">
+        <span class="copyright">Grupo 4 Digital House&copy; 2022</span>
     </footer>
-
 </body>
-
 </html>

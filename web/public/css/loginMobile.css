@@ -1,0 +1,78 @@
+main.not-main-Home{
+    justify-content: center;
+    margin-top: 3rem;
+    width: 90%;
+}
+
+
+.main-form{
+    text-align: center;
+}
+
+.form-control{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    width: 90%;
+}
+
+.form-control>span{
+    color: #29d5e2;
+    font-size: 1.2rem;
+}
+
+.last-field{
+    margin-top: 2rem;
+}
+
+.username-control{
+    border:#cffbff 0.1rem solid ;
+    border-radius: 0.5em;
+    padding: 0.5rem;
+    width: 83%;
+}
+
+.password-control{
+    border:#cffbff 3px solid ;
+    border-radius: 0.5em;
+    padding: 0.5rem;
+    width: 83%;
+}
+
+.btn-group{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.2rem;
+}
+
+.form-btn{
+    background-color: #8326ef;
+    color: #cffbff;
+    border-radius: 0.5em;
+    padding: 10px;
+    text-align: center;
+    width: 45%;
+}
+
+.register{
+    color: #cffbff;
+}
+
+.register-wrapper{
+    color: #8326ef;
+    font-size: 0.8rem;
+    margin-top: 2rem;  
+    text-align: center;
+}
+
+.logo-user{
+    margin-bottom: 2rem;
+}
+
+.logo-user>span{
+    color: #8326efd9;
+    font-size: 8rem;
+}

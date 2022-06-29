@@ -2,6 +2,12 @@ header{
     justify-content: center;
 }
 
+.not-main-Home{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5%;
+}
+
 .header-wrapper{
     align-content: center;
     align-items: center;
@@ -132,6 +138,7 @@ header{
 }
 
 .collapsible-body{
+    align-items: center;
     gap: 0.5rem;
     width: 50%;
 }

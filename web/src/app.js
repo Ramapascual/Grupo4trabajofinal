@@ -11,3 +11,15 @@ app.use(express.static(publicFolder));
 app.get('/', (req, res) => {
     res.sendFile(path.resolve(publicFolder, '../views/index.html'));
 });
+
+app.get('/login.html', (req, res) => {
+    res.sendFile(path.resolve(__dirname, '../views/login.html'));
+});
+
+app.get('/register.html', (req, res) => {
+    res.sendFile(path.resolve(__dirname, '../views/register.html'));
+});
+
+app.post('/', (req, res) => {
+    res.sendFile(path.resolve(__dirname, '../views/login.html'));
+});

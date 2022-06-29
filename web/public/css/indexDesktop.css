@@ -1,13 +1,10 @@
 @media screen and (min-width: 1200px){
 
-    #intro{
-        height: 25rem;
-    }
 
     .heading-content{
         display: flex;
         flex-wrap: wrap;
-        gap: 3rem;
+        gap: 0.5rem;
     }
 
     .heading-tittle, .typing-effect{
@@ -23,12 +20,12 @@
         font-size: 1.4rem;
         order: 1;
         position: relative;
-        top: -20rem;
+        top: -28rem;
     }
 
     .heading-content>figure{
-        position: relative;
-        right: -2rem;
+        height: 35rem;
+        left: 10%; 
         top: -1.5rem;
         width: 50%;
     }
