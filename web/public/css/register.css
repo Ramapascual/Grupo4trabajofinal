@@ -1,19 +1,14 @@
-.logo-landing>img {
-    position: relative;
-    top: -60px;
-    left: 39%;
-}
 
 .landing-brand {
     position: relative;
-    top: -170px;
+    top: -125px;
     text-align: center;
-    left: 80px;
+    left: 180px;
 }
 
 .landing-heading {
     position: relative;
-    top: -188px;
+    top: -140px;
     left: 90px;
 
     text-align: center;
@@ -21,13 +16,13 @@
 
 .bg-image {
     position: relative;
-    height: 100vh;
+    height: 100%;
 }
 
 .formulario {
     position: relative;
     text-align: center;
-    margin-top: 180px;
+    margin-top: 0px;
 }
 
 .control {
@@ -37,7 +32,8 @@
     display: flex;
     margin: 30px;
     align-items: center;
-    left: 35%
+    left: 35%;
+    background-color: #d8d8d8
 }
 
 .Fecha {
@@ -63,21 +59,98 @@ button.boton-formulario {
 
 
 
-.register-image {
-    margin-bottom: 100px;
-    text-align: left;
-
-}
 
 img{
     width: 10%;
-    position: absolute
+    position: relative;
+    left: 74vh;
+    margin-top: 20px;
 }
 
 .register-image{
     position: relative;
-    left: 37%;
-    top: -280px;
+   left: -35%;
+    top: -50px;
+}
+.logo-landing{
+width: 90%;
+}
+
+/*
+@media (min-width: 768px) {
+
+    .logo-landing>img{
+        position: relative;
+        left: 160px;
+        width: 20%;
+    }
+
+    .landing-brand {
+        position: relative;
+       left:60px
+    }
+    
+    .landing-heading {
+        position: relative;
+       left: 70px;
+    }
+figure.register-image{
+    /*Agrandar imagen */
+   
+/*}
+    .formulario{
+        position:absolute;
+        width: 150%;
+        right: -23%
+    }
+
+    .boton-formulario {
+        position: absolute;
+        
+    }
+}
+
+
+@media(min-width: 360px){   .logo-landing>img{
+    position: relative;
+    width: 20%;
+    left: 10%;
+}
+
+.landing-brand {
+    position: relative;
+    left: 30px;
+    /* falta achicar */
+   
+/*}
+
+.landing-heading {
+    position: relative;
+    left:70px;
+    /* falta achicar */
+
+   
+/*}
+
+.formulario{
+    position:relative;
+    top:-280px;
+    left: -170px;
+    width: 600px;
+}
+
+.boton-formulario {
+    position: relative;
+    right: -30px;
     
 }
 
+button.boton-formulario {
+    border-radius: 0.5em;
+    width: 100px;
+   
+    
+}
+
+
+}

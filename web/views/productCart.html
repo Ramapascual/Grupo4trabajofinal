@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/styles.css" type="text/css">
+        <link rel="stylesheet" href="/css/carrito.css" type="text/css">
+        <script src="https://kit.fontawesome.com/5e9a3142ad.js" crossorigin="anonymous"></script>
+        <title>Carrito de Compras</title>
+    </head>
+    <body class="bg-image">
+        <section class="landing-section" id="landing-section">
+            <figure class="logo-landing">
+                <img src="/assets/streamixLogo.svg" alt="brand logo">
+                <h1 class="landing-brand">STREAMIX</h1>
+            </figure>
+            <h2 class="landing-heading">Todo para tus streams!</h2>
+        
+            <main>
+                <h1 class="Pedido">Tu Pedido</h1>
+                <section class="conteinerPrincipalProd">
+                    <section class="conteinerProd">
+                        <!-- Comienxo de articulo -->
+                        <article class="articuloProd">
+                            <div class="eliminar-del-carrito">
+                                
+                                <i class="fa-solid fa-trash-can"></i></i>
+                            </div>
+                            <div class="articulo1">
+                                <img class="imagenArticulo" src="/assets/streamdeck.png" alt="logo">
+                            </div>
+                            <div class="articulo2">
+                                <h3 class="fuenteCarrito">Stream deck</h3>
+                                <p class="fuenteCarrito">Negro</p>
+                                <p class="fuenteCarrito">$40.000</p>
+                                <div class="cantidad">
+                                    <p>Cantidad</p>
+                                    <select class="inputCantidad" name="select">
+                    <option value="1">1</option>
+                    <option value="2" selected>2</option>
+                    <option value="v3">3</option>
+                  </select>
+                                </div>
+                            </div>
+                        </article>
+                        <!-- Fin de aerticulo -->
+
+                        <!-- Comienxo de articulo -->
+                        <article class="articuloProd">
+                            <div class="eliminar-del-carrito2">
+                                 <i class="fa-solid fa-trash-can" name="select"></i>
+                            </div>
+                            <div class="articulo1">
+                                <img class="imagenArticulo" src="/assets/capturadora.png" alt="logo">
+                            </div>
+                            <div class="articulo2">
+                                <h3>Capturadora</h3>
+                                <p class="fuenteCarrito">Negro</p>
+                                <p>$20.490</p>
+                                <div class="cantidad">
+                                    <p>Cantidad</p>
+                                    <select class="inputCantidad" name="select">
+                    <option value="1">1</option>
+                    <option value="2" selected>2</option>
+                    <option value="v3">3</option>
+                  </select>
+                                </div>
+                            </div>
+                        </article>
+                        <!-- Fin de aerticulo -->
+                    </section>
+                    <section class="carrito">
+                        <form action="/compra" method="POST">
+                            <h2>Total de tu pedido</h2>
+                            <p>$ 60.490</p>
+                            <h2>Gastos de envío</h2>
+                            <p>$ 500</p>
+                            <h2>Total de tu compra</h2>
+                            <h3>$ 60.990</h3>
+                            <input class="botonComprar" type="submit" value="Finalizar Compra" type="submit" href="">
+                        </form>
+                    </section>
+                </section>
+
+                </section>
+            </main>
+            
+    </body>
+
+</html>
