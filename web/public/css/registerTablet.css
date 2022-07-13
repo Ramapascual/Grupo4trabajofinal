@@ -1,0 +1,11 @@
+@media screen and (min-width: 650px){
+
+    main.not-main-Home{
+        height: 60vh;
+        margin-top: 12vh;
+    }
+
+    .main-form{
+        width: 70%;
+    }
+}

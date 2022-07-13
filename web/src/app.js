@@ -21,5 +21,13 @@ app.get('/register.html', (req, res) => {
 });
 
 app.post('/', (req, res) => {
+    res.sendFile(path.resolve(__dirname, '../views/index.html'));
+});
+
+app.post('/login.html', (req, res) => {
     res.sendFile(path.resolve(__dirname, '../views/login.html'));
+});
+
+app.get('/productCart.html', (req, res) => {
+    res.sendFile(path.resolve(__dirname, '../views/productCart.html'));
 });

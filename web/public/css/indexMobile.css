@@ -30,13 +30,13 @@
 }
 
 .mainHome{
-    display: none;
+    display: flex; /*Cambiar a none y pasar propiedades de abajo a la clase displayToggle*/
+    flex-wrap: wrap;
+    margin: 5%;
 }
 
 .displayToggle{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 5%;
+    display: none; /*Cambiar a flex después del sprint*/
 }
 
 main{

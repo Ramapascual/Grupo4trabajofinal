@@ -21,17 +21,6 @@
     <title>Home</title>
 </head>
 <body class="bg-image">
-    <section class="landing-section" id="landing-section">
-        <figure class="logo-landing">
-            <img src="/assets/streamixLogo.svg" alt="brand logo">
-            <h1 class="landing-brand">STREAMIX</h1>
-        </figure>
-        <h2 class="landing-heading">Todo para tus streams!</h2>
-        <button type="button" class="landing-button" id="landing-btn" onclick="landingButton()">Entra ya!</button>
-        <div>
-            <figure class="sponsorship"><img class="sponsor" src="/assets/logitech.png" alt="Logitech-logo"><img class="sponsor" src="/assets/hyper-x-logo.png" alt="HyperXlogo"><img class="sponsor" src="/assets/Zowie_Logo.png" alt="ZowieLogo"><img class="sponsor" src="/assets/Elgato_logo.png" alt="ElGato"></figure>
-        </div>
-    </section>
     <header class="mainHome" id="homeHeader">
         <div class="header-wrapper">
             <div class="header-logo"><a href="/"><img src="/assets/streamixLogo.svg" alt="logo"></a></div>
@@ -60,7 +49,7 @@
                 </nav>
                 <nav class="collapsible-body nav-body2">
                     <a href="">Productos</a>
-                    <a href=""><span class="material-icons">shopping_cart</span>Carrito</a>
+                    <a href="./productCart.html"><span class="material-icons">shopping_cart</span>Carrito</a>
                     <a href="./login.html"><span class="material-icons">account_circle</span>Entra</a>
                 </nav> 
             </div>            
@@ -70,7 +59,7 @@
         <section class="mainHome" id="intro">
             <div class="heading-content">
                 <h4 class="heading-tittle">Enriquece tu contenido con</h4>
-                <span class="typing-effect" id="typing-effect"></span>
+                <span class="typing-effect" id="typing-effect">Dispositivos que faciliten tu transmisión</span>
                 <figure>
                     <div class="image-loop"></div>
                 </figure>
@@ -118,105 +107,5 @@
     <footer class="mainHome" id="homeFooter">
         <span class="copyright">Grupo 4 Digital House&copy; 2022</span>
     </footer>
-    <script type="text/javascript">
-
-            const message1 = "Mercancía personalizable canjeable por tus espectadores";
-            const message2 = "Interacciones divertidas que promueven tu salud";
-            const message3 = "Dispositivos que faciliten tu transmisión";
-            const message4 = "Objetos para tu comodidad";
-
-            const messages = [message1, message2, message3, message4];
-
-            let typeText = document.querySelector(".typing-effect");
-            let isAdding = true;
-            let index = 0;
-            let textToBeTypedIndex = 0;
-            
-            function typing(){
-                setTimeout(function(){
-
-                    typeText.innerText = messages[textToBeTypedIndex].slice(0, index);
-
-                    if (isAdding) {
-      
-                        if (index > messages[textToBeTypedIndex].length) {
-        
-                        isAdding = false
-                        typeText.classList.add("showAnim");
-                        setTimeout(function () {
-                        typeText.classList.remove("showAnim");
-                        typing();
-                    }, 2000);
-                    return;
-                } else {
-                index++;
-                }
-            } else {
-                if (index === 0){
-                    isAdding = true;
-                    textToBeTypedIndex = (textToBeTypedIndex + 1) % messages.length;
-                }
-                else {
-                    index--;
-                }
-            }
-                typing();   
-            }, isAdding ? 120 : 60);
-        }
-
-        function classRemover(element, className){
-            element.classList.remove(className);
-        }
-
-        function classAdder(element, className){
-            element.classList.add(className);
-        }
-
-        let hiddenElements = document.getElementsByClassName("mainHome");
-
-            function landingButton(){
-            document.getElementById("landing-section").style.display ="none";
-            /* const intro = document.getElementById("intro");
-            const cat1 = document.getElementById("cat1");
-            const cat2 = document.getElementById("cat2");
-            const cat3 = document.getElementById("cat3");
-            const cat4 = document.getElementById("cat4");
-            intro.style.display ="flex";
-            cat1.style.display = "flex";
-            cat2.style.display = "flex";
-            cat3.style.display = "flex";
-            cat4.style.display = "flex"; */
-
-            
-            if(hiddenElements.length > 0) {
-                for(let i = 0; i < hiddenElements.length; i++) {
-                    classAdder(hiddenElements[i], "displayToggle");
-                }
-
-                for(let i = 0; i < hiddenElements.length; i++){
-                    classRemover(hiddenElements[i], "mainHome");
-                }
-            } /* if(hiddenElements.length > 0){
-                
-                for(let i = 0; i < hiddenElements.length; i++) {
-                    classAdder(hiddenElements[i], "displayToggle");
-                }
-
-                for(let i = 0; i <script hiddenElements.length; i++){
-                    classRemover(hiddenElements[i], "mainHome");
-                }
-            }
-
-            classRemover(document.getElementById("cat1"), "mainHome");
-            classRemover(document.getElementById("homeFooter"), "mainHome"); */
-                
-
-            console.log(hiddenElements);
-            console.log(hiddenElements.length);
-
-
-            typing();
-        }
-    </script>
 </body>
 </html>
