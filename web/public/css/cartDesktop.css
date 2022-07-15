@@ -1,0 +1,82 @@
+@media screen and (min-width: 1200px){
+
+    .form-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-items: space-between;
+        width: 90vw;
+    }
+
+    .shopping-items, .shipping-payment-info-wrapper{
+        border-radius: 0.5rem;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        width: 60vw;
+    }
+
+    .shopping-items{
+        order: -2;
+    }
+
+    .shopping-item{
+        gap: 0;
+    }
+
+    .checkout{
+        border-radius: 0.5rem;
+        height: 30vh;
+        order: -1;
+        width: 20vw;
+    }
+
+    .product-detail{
+        margin-left: 2rem;
+        width: 70%;
+    }
+
+    .product-image-link{
+        height: 50%;
+        margin-right: 2rem;
+        order: 0;
+        width: 40%;
+    }
+
+    .product-name-link{
+        font-size: 1rem;
+        height: 10%;
+        line-height: 2rem;
+        order: 1;
+        width: 50%;
+    }
+
+    .product-quantity{
+        height: 10%;
+        position: relative;
+        right: -5rem;
+        top: -2rem;
+        width: 40%;
+    }
+
+    .price{
+        margin-left: 2.5rem;
+    }
+
+    /* Shipping & payment information*/
+
+    .info-wrapper{
+        width: 50%;
+    }
+
+    .payment-header, .shipping-header{
+        text-align: center;
+    }
+
+    .card, .payment-header{
+        border-right: 1px solid #29d5e2;
+    }
+
+    .card, .address-wrapper{
+        width: 100%;
+    }
+
+}

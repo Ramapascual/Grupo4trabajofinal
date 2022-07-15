@@ -1,0 +1,41 @@
+@media screen and (min-width: 650px) {
+    
+    .shopping-header{
+        gap: 5vw;
+    }
+
+    .heading{
+        width: 80%;
+    }
+    
+    .tittle{
+        margin-left: 5rem;
+    }
+
+    
+    .price{
+        margin-left: 4rem;
+    }
+    
+    /* Payment & Shipping */
+    .shopping-items, .shopping-item{
+        width: 100%;
+    }
+    
+    .shopping-item{
+        gap: 5vw;
+    }
+    
+    .item-selector, .payment-header>span, .shipping-header>span, .card-selector, .address-selector{
+        margin-left: 2rem;
+    }
+
+    .info-wrapper, .payment-wrapper, .shipping-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .card, .address-wrapper{
+        width: 50%;
+    }
+}

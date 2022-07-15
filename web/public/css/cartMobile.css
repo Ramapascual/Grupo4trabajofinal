@@ -1,4 +1,4 @@
-main, .form-wrapper, .shopping-header, .shipping-payment-info-header, .payment-wrapper, .shipping-wrapper{
+main, .form-wrapper, .shopping-header, .shipping-payment-info-header, .shipping-payment-info-wrapper, .shipping-wrapper, .info-wrapper, .payment-wrapper{
     width: 100%;
 }
 
@@ -208,6 +208,7 @@ main, .form-wrapper, .shopping-header, .shipping-payment-info-header, .payment-w
 }
 
 .gift-purchase{
+    align-items: center;
     display: flex;
     gap: 0.5rem;
     justify-content: center;
