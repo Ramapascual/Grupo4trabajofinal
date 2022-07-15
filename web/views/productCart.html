@@ -4,88 +4,205 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Lobster&family=Open+Sans:wght@300;400;500;600;700;800&family=Yellowtail&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="/css/styles.css" type="text/css">
-        <link rel="stylesheet" href="/css/carrito.css" type="text/css">
-        <script src="https://kit.fontawesome.com/5e9a3142ad.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/css/headerMobile.css" type="text/css">
+        <link rel="stylesheet" href="/css/headerTablet.css" type="text/css">
+        <link rel="stylesheet" href="/css/headerDesktop.css" type="text/css">
+        <link rel="stylesheet" href="/css/footerMobile.css" type="text/css">
+        <link rel="stylesheet" href="/css/footerTablet.css" type="text/css">
+        <link rel="stylesheet" href="/css/footerDesktop.css" type="text/css">
+        <link rel="stylesheet" href="/css/cartMobile.css" type="text/css">
         <title>Carrito de Compras</title>
     </head>
     <body class="bg-image">
-        <section class="landing-section" id="landing-section">
-            <figure class="logo-landing">
-                <img src="/assets/streamixLogo.svg" alt="brand logo">
-                <h1 class="landing-brand">STREAMIX</h1>
-            </figure>
-            <h2 class="landing-heading">Todo para tus streams!</h2>
-        
-            <main>
-                <h1 class="Pedido">Tu Pedido</h1>
-                <section class="conteinerPrincipalProd">
-                    <section class="conteinerProd">
-                        <!-- Comienxo de articulo -->
-                        <article class="articuloProd">
-                            <div class="eliminar-del-carrito">
-                                
-                                <i class="fa-solid fa-trash-can"></i></i>
+        <header class="not-main-Home">
+            <div class="header-wrapper">
+                <div class="header-logo"><a href="/"><img src="/assets/streamixLogo.svg" alt="logo"></a></div>
+                <div class="header-branding">
+                    <h1 class="header-brand">STREAMIX</h1>
+                    <h2 class="header-heading">Todo para tus streams!</h2>
+                </div>
+            </div>
+            <div class="header-wrapper2">
+                <form action="/" method="get" class="search-bar">
+                    <fieldset class="input-field">
+                        <div class="search-btn" type="submit"><span class="material-icons">search</span></div>
+                        <input type="text" name="search">
+                    </fieldset>
+                </form>
+                <div class="collapsible nav-menu">
+                    <div class="menu-btn-wrapper">
+                        <div class="collapsible-header nav-btn">
+                            <a id="hideNavs" href="#hideNavs" class="collapse-start"><span class="material-icons">menu</span></a>
+                            <a id="showNavs" href="#showNavs" class="collapsed"><span class="material-icons">menu_open</span></a>
+                        </div>
+                    </div>
+                    <nav class="collapsible-body nav-body">
+                        <a href="">Nosotros</a>
+                        <a href="">Contáctanos</a>
+                    </nav>
+                    <nav class="collapsible-body nav-body2">
+                        <a href="">Productos</a>
+                        <a href="./productCart.html"><span class="material-icons">shopping_cart</span>Carrito</a>
+                        <a href="./login.html"><span class="material-icons">account_circle</span>Entra</a>
+                    </nav> 
+                </div>            
+            </div>
+        </header>
+        <main>
+            <form action="/" method="post" class="form-wrapper">
+                <section class="shopping-items">
+                    <div class="shopping-header">
+                        <div class="heading">
+                            <h1 class="title">Tu pedido</h1>
+                        </div>
+                        <div class="column">
+                            <span>Precio</span>
+                        </div>
+                    </div>
+                    <article class="shopping-item">
+                        <div class="item-selector">
+                            <input type="hidden" name="cartArticle1" value="productID=1, value=40000">
+                            <input type="checkbox" name="cartArticleSelected">
+                        </div>
+                        <div class="product-detail">
+                            <a href="/productDetail.html" class="product-image-link">
+                                <figure>
+                                    <img src="/assets/productImages/streamDeck.jpg" alt="Streamdeck">
+                                </figure>
+                            </a>
+                            <a href="/productDetail.html" class="product-name-link">
+                                <h4 class="product-name">Stream deck Elgato</h4>
+                            </a>
+                            <div class="product-quantity">
+                                <fieldset class="quantity-selector">
+                                    <span>Cant.</span>
+                                    <select name="quantity">
+                                        <option value="1" selected>1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </fieldset>
+                                <button class="product-delete"><span class="material-icons">delete</span><span>Eliminar</span></button>
                             </div>
-                            <div class="articulo1">
-                                <img class="imagenArticulo" src="/assets/streamdeck.png" alt="logo">
+                        </div>
+                        <div class="price">
+                            <span><i class="currency material-icons">attach_money</i>40.000</span>
+                        </div>
+                    </article>
+                    <article class="shopping-item">
+                        <div class="item-selector">
+                            <input type="hidden" name="cartArticle2" value="productID=2, value=20490">
+                            <input type="checkbox" name="cartArticle2Selected">
+                        </div>
+                        <div class="product-detail">
+                            <a href="/productDetail.html" class="product-image-link">
+                                <figure>
+                                    <img src="/assets/productImages/capturer.jpg" alt="Capturer">
+                                </figure>
+                            </a>
+                            <a href="/productDetail.html" class="product-name-link">
+                                <h4 class="product-name">4K Plus Capturadora de video HDMI con loop out, HD 60S USB 3.0</h4>
+                            </a>
+                            <div class="product-quantity">
+                                <fieldset class="quantity-selector">
+                                    <span>Cant.</span>
+                                    <select name="quantity">
+                                        <option value="1" selected>1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </fieldset>
+                                <button class="product-delete"><span class="material-icons">delete</span><span>Eliminar</span></button>
                             </div>
-                            <div class="articulo2">
-                                <h3 class="fuenteCarrito">Stream deck</h3>
-                                <p class="fuenteCarrito">Negro</p>
-                                <p class="fuenteCarrito">$40.000</p>
-                                <div class="cantidad">
-                                    <p>Cantidad</p>
-                                    <select class="inputCantidad" name="select">
-                    <option value="1">1</option>
-                    <option value="2" selected>2</option>
-                    <option value="v3">3</option>
-                  </select>
+                        </div>
+                        <div class="price">
+                            <span><i class="currency material-icons">attach_money</i>20.490</span>
+                        </div>
+                    </article>
+                    <div class="price subtotal">
+                        <div><span><i class="currency material-icons">attach_money</i>60.490</span></div>
+                    </div>
+                </section>
+                <section class="shipping-payment-info-wrapper">
+                    <div class="shipping-payment-info-header"><span>Información de pago y envío</span></div>
+                    <article class="info-wrapper">
+                        <div class="payment-wrapper">
+                            <div class="payment-header"><span>Tus tarjetas</span>
+                            </div>
+                            <div class="card">
+                                <div class="card-selector">
+                                    <input type="hidden" name="paymentMethod" value="paymentMetId=1, cardNumber= '4010990061071678', cardIssuer= 'Visa', cardHolder= 'Sebastian Rangel', expirationDate= 01/03/2025, ccv= ''">
+                                    <input type="radio" name="paymentMethodSelected" value="paymentId= 1">
+                                </div>
+                                <div class="card-info">
+                                    <span class="card-title"><i>Visa</i> que termina en 1678</span>
+                                    <span class="card-holder">Sebastian Rangel</span>
+                                    <span class="card-expiration">03/25</span>
+                                    <input class="ccv" type="number" name="ccv">
                                 </div>
                             </div>
-                        </article>
-                        <!-- Fin de aerticulo -->
-
-                        <!-- Comienxo de articulo -->
-                        <article class="articuloProd">
-                            <div class="eliminar-del-carrito2">
-                                 <i class="fa-solid fa-trash-can" name="select"></i>
-                            </div>
-                            <div class="articulo1">
-                                <img class="imagenArticulo" src="/assets/capturadora.png" alt="logo">
-                            </div>
-                            <div class="articulo2">
-                                <h3>Capturadora</h3>
-                                <p class="fuenteCarrito">Negro</p>
-                                <p>$20.490</p>
-                                <div class="cantidad">
-                                    <p>Cantidad</p>
-                                    <select class="inputCantidad" name="select">
-                    <option value="1">1</option>
-                    <option value="2" selected>2</option>
-                    <option value="v3">3</option>
-                  </select>
+                            <div class="card">
+                                <div class="card-selector">
+                                    <input type="hidden" name="paymentMethod" value="paymentMetId=2, cardNumber= '530455348651162', cardIssuer= 'Mastercard', cardHolder= 'Sebastian Rangel', expirationDate= 01/04/2024, ccv= ''">
+                                    <input type="radio" name="paymentMethodSelected" value="paymentId= 2">
+                                </div>
+                                <div class="card-info">
+                                    <span class="card-title"><i>Mastercard</i> que termina en 1162</span>
+                                    <span class="card-holder">Sebastian Rangel</span>
+                                    <span class=" card-expiration">04/24</span>
+                                    <input class="ccv" type="number" name="ccv">
                                 </div>
                             </div>
-                        </article>
-                        <!-- Fin de aerticulo -->
-                    </section>
-                    <section class="carrito">
-                        <form action="/compra" method="POST">
-                            <h2>Total de tu pedido</h2>
-                            <p>$ 60.490</p>
-                            <h2>Gastos de envío</h2>
-                            <p>$ 500</p>
-                            <h2>Total de tu compra</h2>
-                            <h3>$ 60.990</h3>
-                            <input class="botonComprar" type="submit" value="Finalizar Compra" type="submit" href="">
-                        </form>
-                    </section>
+                        </div>
+                    </article>
+                    <article class="info-wrapper">
+                        <div class="shipping-wrapper">
+                            <div class="shipping-header"><span>Tus direcciones</span></div>
+                                <div class="address-wrapper">
+                                    <div class="address-selector">
+                                        <input type="hidden" name="shippingAddress" value="addressID= 1, fullName = 'Sebastian Rangel', address= '11580 NW 105th St', city= 'Miami' state= 'Florida', zipCode= 33178">
+                                        <input type="radio" name="shippingAddressSelected" value="addressId1">
+                                    </div>
+                                    <div class="address-info">
+                                        <span class="address-tittle">Sebastian Rangel</span>
+                                        <span class="address">11580 NW 105th St Miami, Florida</span>
+                                        <span>33178</span>
+                                    </div>
+                                </div>
+                            <div class="address-wrapper">
+                                <div class="address-selector">
+                                    <input type="hidden" name="shippingAddress" value="addressID= 2, fullName = 'Camila Carreño', address= '208 Ridge St', city= 'Clark Summit' state= 'Pennsylvania', zipCode= 18411">
+                                    <input type="radio" name="shippingAddressSelected" value="addressId1">
+                                </div>
+                                <div class="address-info">
+                                    <span class="address-tittle">Camila Carreño</span>
+                                    <span class="address">208 Ridge St Clark Summit, Pennsylvania</span>
+                                    <span>18411</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
                 </section>
-
+                <section class="checkout">
+                    <div class="gift-purchase"><input type="checkbox" name="giftPurchase" id="giftPurchase"><label for="giftPurchase">Esta compra es un obsequio</label></div>
+                    <div class="checkout-subT">
+                        <span class="subtotal">Subtotal <i class="currency material-icons">attach_money</i>60.490</span>
+                        <span class="subtotal">Gastos de envío<i class="currency material-icons">attach_money</i>500</span>
+                    </div>
+                    <div class="checkout-container">
+                        <span class="total">Total <i class="currency material-icons">attach_money</i> 60.990</span>
+                        <button type="submit" class="purchase-btn"><span>Comprar</span><i class="material-icons">payment</i></button>
+                    </div>
                 </section>
-            </main>
-            
+            </form>
+        </main>
+        <footer class="login-footer">
+            <span class="copyright">Grupo 4 Digital House&copy; 2022</span>
+        </footer>
     </body>
-
 </html>

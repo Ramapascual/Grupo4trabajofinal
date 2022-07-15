@@ -1,0 +1,257 @@
+main, .form-wrapper, .shopping-header, .shipping-payment-info-header, .payment-wrapper, .shipping-wrapper{
+    width: 100%;
+}
+
+/* Shopping items section */
+
+.shopping-items{
+    background-color: #cffbff9e;
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 1rem;
+}
+
+.shopping-header{
+    align-content: center;
+    border-bottom: 1px solid #29d5e2;
+    display: flex;
+    flex-flow: row;
+    gap: 50vw;
+    padding-bottom: 0.75rem;
+    padding-top: 0.75rem;
+}
+
+.heading{
+    color: #8326ef;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}
+
+.column{
+    align-items: flex-end;
+    color: #8326ef;
+    display: flex;
+    justify-self: flex-end;
+}
+
+.shopping-item{
+    border-bottom: 1px solid #29d5e2;
+    display: flex;
+    gap: 1rem;
+    justify-items: center;
+    margin-top: 1rem;
+}
+
+.item-selector{
+    align-items: center;
+    display: flex;
+    margin-left: 0.5rem;
+}
+
+.product-detail{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 60%;
+}
+
+.product-image-link{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    order: 1;
+    width: 100%;
+}
+
+.product-name-link{
+    font-size: 1.2rem;
+    order: -1;
+    text-align: center;
+    width: 100%;
+}
+
+.product-name{
+    color: black;
+    text-align: justify;
+}
+
+.product-quantity{
+    align-items: center;
+    display: flex;
+    font-size: 0.7rem;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    order: 2;
+}
+
+.quantity-selector{
+    background-color: #fff;
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+}
+
+.product-delete{
+    align-items: center;
+    border-radius: 0.5rem;
+    color: #29d5e2;
+    display: flex;
+    font-size: 0.7rem;
+    justify-content: center;
+    padding: 0.2rem;
+}
+
+.price{
+    align-items: center;
+    display: flex;
+    font-size: 1.2rem;
+}
+
+.currency{
+    font-size: 1rem;
+}
+
+.subtotal{
+    align-self: end;
+    font-weight: bold;
+    margin-right: 1.5rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+/* Shipping & payment info section */
+
+.shipping-payment-info-wrapper{
+    background-color: #cffbff9e;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.shipping-payment-info-header{
+    border-bottom: 1px solid #29d5e2;
+    color: #8326ef;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 0.75rem;
+    padding-top: 0.75rem;
+}
+
+.payment-header, .shipping-header{
+    color: #8326ef;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-left: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    width: 100%;
+}
+
+.card, .address-wrapper{
+    border-bottom: 1px solid #29d5e2;
+    display: flex;
+    gap: 1rem;
+}
+
+.address-wrapper:last-child{
+    border-bottom: none;
+}
+
+.card-selector, .address-selector{
+    align-items: center;
+    display: flex;
+    margin-left: 0.5rem;
+}
+
+.card-info, .address-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    text-align: center;
+}
+
+.card-title, .card-holder, .address-tittle, .address{
+    margin-bottom: 0.5rem;
+    width: 100%;
+}
+
+.card-holder, .address-tittle{
+    font-weight: bold;
+}
+
+.card-title>i{
+    font-style: normal;
+    font-weight: bold;
+}
+
+.card-expiration, .ccv{
+    width: 20%;
+}
+
+.card-expiration{
+    margin-right: 1rem;
+}
+
+.ccv{
+    border-radius: 0.5rem;
+}
+
+/* Checkout section*/
+
+.checkout{
+    background-color: #cffbff9e;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.gift-purchase{
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    width: 100%;
+}
+
+.checkout-subT, .checkout-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.checkout-subT{
+    border-bottom: 1px solid #29d5e2;
+}
+
+.checkout-subT>span.subtotal{
+    font-size: 1.2rem;
+    margin: 0;
+    margin-bottom: 0.5rem;
+    padding: 0;
+    width: 100%;
+}
+
+.total{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    width: 100%;
+}
+
+.purchase-btn{
+    align-items: center;
+    background-color: #8326ef;
+    border-radius: 0.5rem;
+    color: #cffbff;
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    padding: 0.5rem;
+}
