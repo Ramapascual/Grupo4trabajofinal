@@ -2,7 +2,7 @@
            
     .barra-izq{
       align-content: center;
-      display: flexbox;
+      display: flex;
       flex-wrap: wrap;
       justify-content: left;
       position: relative;
