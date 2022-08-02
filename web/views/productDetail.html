@@ -146,38 +146,138 @@
    </section> -->
    <aside class="product-filter">
         <div class="mobile-toggle">
-            <span>
-                <a href="">Filtrar</a>
+            <span class="filter-expander">
+                <a id="showFilters" href="#showFilters">Filtrar</a>
+                <a id="hideFilters" href="#hideFilters">Esconder filtros</a>
             </span>
         </div>
-        <ul class="collapsible">
+        <ul class="collapsible mobile-toggled">
             <li>
-                <div></div>
-                <div></div>
+                <div class="category-wrapper">
+                  <span class="category-header">Dispositivos / Herramientas</span>
+                  <a class="expand" href=""><span class="material-icons">expand_more</span></a>
+                  <a class="collapse active" href=""><span class="material-icons">expand_less</span></a>
+                </div>
+                <div>
+                  <ul class="category-list expanded-list">
+                    <li><a href="">Cámaras</a></li>
+                    <li><a href="">Micrófonos</a></li>
+                    <li><a href="">Capturadoras de video</a></li>
+                    <li><a href="">Stream decks</a></li>
+                    <li><a href="">Monitores</a></li>
+                  </ul>
+                </div>
             </li>
             <li>
-                <div></div>
-                <div></div>
+                <div class="category-wrapper">
+                  <span class="category-header">Salud del streamer</span>
+                  <a class="expand active" href=""><span class="material-icons">expand_more</span></a>
+                  <a class="collapse" href=""><span class="material-icons">expand_less</span></a>
+                </div>
+                <div>
+                  <ul class="category-list collapsed-list">
+                    <li><a href="">Lentes filtro UV</a></li>
+                    <li><a href="">Corrector de postura</a></li>
+                    <li><a href="">Más</a></li>
+                  </ul>
+                </div>
             </li>
             <li>
-                <div></div>
-                <div></div>
+                <div class="category-wrapper">
+                  <span class="category-header">Muebles</span>
+                  <a class="expand active" href=""><span class="material-icons">expand_more</span></a>
+                  <a class="collapse" href=""><span class="material-icons">expand_less</span></a>
+                </div>
+                <div>
+                  <ul class="category-list collapsed-list">
+                    <li><a href="">Mini bar/heladera</a></li>
+                    <li><a href="">Silla gamer</a></li>
+                    <li><a href="">Escritorios</a></li>
+                    <li><a href="">Accesorios</a></li>
+                    <li><a href="">Combos</a></li>
+                  </ul>
+                </div>
             </li>
             <li>
-                <div></div>
-                <div></div>
-            </li>
-            <li>
-                <div></div>
-                <div></div>
+                <div class="category-wrapper">
+                  <span class="category-header">Canjeables</span>
+                  <a class="expand active" href=""><span class="material-icons">expand_more</span></a>
+                  <a class="collapse" href=""><span class="material-icons">expand_less</span></a>
+                </div>
+                <div>
+                  <ul class="category-list collapsed-list">
+                    <li><a href="">Fitness</a></li>
+                    <li><a href="">Ropa deportiva</a></li>
+                    <li><a href="">Merchandasing</a></li>
+                  </ul>
+                </div>
             </li>
         </ul>
    </aside>
-   <section>
-        <nav></nav>
-        <article>
-            <div></div>
-            <div></div>
+   <section class="product-detail">
+        <nav>
+          <div class="nav-wrapper">
+            <div class="breadcrumbs">
+              <a href="" class="breadcrumb">productos</a>
+              <a href="" class="breadcrumb">dispositivos</a>
+              <a href="" class="breadcrumb last-breadcrumb">stream decks</a>
+            </div>
+          </div>
+        </nav>
+        <article class="product-wrapper">
+            <div class="product-main-wrapper">
+              <figure class="product-images">
+                <div class="product-thumbnails">
+                  <img src="/assets/productImages/streamdeck1.jpg" alt="feature">
+                  <img src="/assets/productImages/streamdeck2.jpg" alt="feature">
+                  <img src="/assets/productImages/streamdeck3.jpg" alt="feature">
+                  <img src="/assets/productImages/streamdeck4.jpg" alt="feature">
+                </div>
+                <img class="img-main" src="/assets/productImages/streamDeck.jpg" alt="device">
+              </figure>
+              <div class="product-info">
+                <h3>Stream deck Elgato MK.2</h3>
+                <span class="product-rating">
+                  <i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star_border</i>
+                </span>
+                <span class="pricing"><i class="material-icons">attach_money</i>20.490</span>
+                <a class="btn-add2Cart"><i class="material-icons">add_shopping_cart</i>Comprar</a> 
+              </div>
+            </div>
+            <div class="product-description-wrapper">
+              <div class="description-header">Descripción de producto</div>
+              <div class="tab-wrapper">
+                <ul class="tabs">
+                  <li><a href="#about" class="active tab">Información</a></li>
+                  <li><a href="#specs" class="tab">Especificaciones</a></li>
+                  <li><a href="#more" class="tab">Más</a></li>
+                </ul>
+              </div>
+              <div class="tab-content">
+                <div id="about" class="tab-pane active">
+                  <span class="product-feature">15 teclas LCD: toque para cambiar escenas, inicie medios, ajuste el audio y más.
+                  </span>
+                  <span class="product-feature">Totalmente personalizable: Personaliza las teclas con iconos personalizados o elige entre cientos.
+                  </span>
+                  <span class="product-feature">Integración directa: control de captura de juegos, OBS, XSplit, TipeeeStream, Twitch, YouTube, Mixer y más.
+                  </span>
+                  <span class="product-feature">Fácil configuración: simplemente arrastra y suelta acciones en las teclas de la aplicación.
+                  </span>
+                  <span class="product-feature">Control ilimitado: anidar carpetas dentro de carpetas para almacenar tantas acciones como desee.
+                  </span>
+                  <figure>
+                    <img src="/assets/productImages/info1.jpg" alt="info">
+                    <img src="/assets/productImages/info2.jpg" alt="info">
+                    <img src="/assets/productImages/info3.jpg" alt="info">
+                    <img src="/assets/productImages/info4.jpg" alt="info">
+                  </figure>
+                </div>
+                <div id="specs" class="tab-pane">
+                </div>
+                <div id="more" class="tab-pane">
+                </div>
+              </div>
+            </div>
         </article>
    </section>
 </main>

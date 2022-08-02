@@ -1,6 +1,6 @@
 @media screen and (min-width: 1200px){
            
-    .barra-izq{
+    /* .barra-izq{
       align-content: center;
       display: flex;
       flex-wrap: wrap;
@@ -85,6 +85,6 @@
       align-items: center;
       justify-content: center;
       gap: 0.65em;
-     }
+     } */
     }
     
