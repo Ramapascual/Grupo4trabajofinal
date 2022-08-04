@@ -12,5 +12,5 @@ app.set('views', resolve(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 app.use(require('./routes/main.routes'));
-app.use('/users' ,require('./routes/users.routes'));
+app.use(require('./routes/users.routes'));
 app.use(require('./routes/products.routes'));

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include('../partials/head')  -%> 
+<body class="bg-image">
+    <%- include('../partials/header')  -%>
+    <main class="<%= className %> ">
+        <form action="/" method="post" class="<%= formClass %>">
+            <div class="logo-user">
+                <span class="<%= iconClass %>">account_circle</span>
+            </div>
+            <% inputs.forEach(input => { %>
+             <fieldset class="form-control <% if (input.name == 'password') { %>
+                <%= input.fieldClass %> 
+             <% } %>">
+                <span class="<%= iconClass %>"><%= input.icon %></span>
+                <input type="<%= input.type %>" name="<%= input.name %>" placeholder="<%= input.placeholder %>" class="<%= input.class %>" minlength="<%= input.minlength %>" required="<%= input.required %>" <% if (input.required == true) { %>
+                    <%= 'required' %> 
+                <% } %>>
+             </fieldset>
+            <% }) %>
+            <div class="btn-group">
+                <button type="reset" class="form-btn">Restablecer</button>
+                <button type="submit" class="form-btn">Login</button>
+            </div>            
+            <div class="register-wrapper" >
+                <span class="NewPerfil">Eres nuevo? Regístrate <a class="register" href="/users/register">aquí</a></span>                
+            </div>
+        </form>
+    </main>
+    <%- include('../partials/footer') -%>  
+</body>
+</html>

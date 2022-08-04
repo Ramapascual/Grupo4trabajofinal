@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include('../partials/head')  -%> 
+<body class="bg-image">
+    <%- include('../partials/header') -%>
+    <main class="<%= className %>">
+        <form action="/users/login" method="post" class="<%= formClass %>" autocomplete="off">
+            <div class="logo-user">
+                <span class="<%= iconClass %>">account_circle</span>
+            </div>
+            <% inputs.forEach(input => { %>
+                <fieldset class="form-control <% if (input.fieldClass !== null) { %>
+                   <%= input.fieldClass %> 
+                <% } %>">
+                   <span class="<%= iconClass %>"><%= input.icon %></span>
+                   <input type="<%= input.type %>" name="<%= input.name %>" placeholder="<%= input.placeholder %>" class="<%= input.class %>" <% if (input.name !== 'date') { %>
+                      minlength="<%= input.minlength %>"
+                    <% } else { %>
+                        min="<%= input.min %>" max="<%= input.max %>"
+                   <% } %> 
+                     required="<%= input.required %>" <% if (input.required == true) { %>
+                       <%= 'required' %> 
+                   <% } %>>
+                </fieldset>
+               <% }) %>
+            <div class="btn-group">
+                <button type="reset" class="form-btn">Restablecer</button>
+                <button type="submit" class="form-btn">Registrar</button>
+            </div>   
+        </form>
+    </main>
+    <%- include('../partials/footer') -%> 
+</body>
+</html>
