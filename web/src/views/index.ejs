@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include('./partials/head');  -%> 
+<body class="bg-image">
+    <%- include('./partials/header'); -%> 
+    <main class="<%= className %> ">
+        <% categorySection.forEach(category => { %>
+            <section class="<%= className %> <% if (categorySection.indexOf(category) > 0) { %>
+                <%= 'categories' %>
+            <% } %>" id="<%= category.id%>">
+                <div class="<%= category.divClass %>">
+                    <h4 class="<%= category.h4Class %>"><%= category.h4Content%></h4>
+                    <span class="<%= category.spanClass %>" <% if (categorySection.indexOf(category) == 0) { %>
+                        <%= 'id =' + category.spanId %> 
+                    <% } %>><% if (categorySection.indexOf(category) == 0) { %>
+                        <%= category.spanContent[0] %>
+                    <% } else { %>
+                        <%= category.spanContent %> 
+                    <% } %> 
+                     </span>
+                     <% if (categorySection.indexOf(category) < 4) { %>
+                        <figure>
+                            <% if (categorySection.indexOf(category) == 0) { %>
+                                <div class="image-loop"></div>
+                                <% } else { %>
+                                    <img class="cat-image" src="<%= category.figureContent %> " alt="CategoryImage">
+                            <% } %>
+                        </figure>
+                        <% } else { %>
+                            <div class="cat-video"><video src="/assets/merchVideo.mp4" autoplay loop></video>
+                            </div>
+                     <% } %>
+                    <% if (category.hasButton === true) { %>
+                        <div class="cat-button"><a href="">Ver productos</a></div>
+                    <% } %>  
+                </div>
+            </section>
+        <% }) %>
+    </main>
+    <%- include('./partials/footer.ejs') -%> 
+</body>
+</html>

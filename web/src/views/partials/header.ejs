@@ -1,0 +1,34 @@
+<header class="<%= className %>">
+    <div class="header-wrapper">
+        <div class="header-logo"><a href="/"><img src="/assets/streamixLogo.svg" alt="logo"></a></div>
+        <div class="header-branding">
+            <h1 class="header-brand">STREAMIX</h1>
+            <h2 class="header-heading">Todo para tus streams!</h2>
+        </div>
+    </div>
+    <div class="header-wrapper2">
+        <form action="/" method="get" class="search-bar">
+            <fieldset class="input-field">
+                <div class="search-btn" type="submit"><span class="material-icons">search</span></div>
+                <input type="text" name="search">
+            </fieldset>
+        </form>
+        <div class="collapsible nav-menu">
+            <div class="menu-btn-wrapper">
+                <div class="collapsible-header nav-btn">
+                    <a id="hideNavs" href="#hideNavs" class="collapse-start"><span class="material-icons">menu</span></a>
+                    <a id="showNavs" href="#showNavs" class="collapsed"><span class="material-icons">menu_open</span></a>
+                </div>
+            </div>
+            <nav class="collapsible-body nav-body">
+                <a href="">Nosotros</a>
+                <a href="">Contáctanos</a>
+            </nav>
+            <nav class="collapsible-body nav-body2">
+                <a href="">Productos</a>
+                <a href="/productCart"><span class="material-icons">shopping_cart</span>Carrito</a>
+                <a href="/login"><span class="material-icons">account_circle</span>Entra</a>
+            </nav> 
+        </div>            
+    </div>
+</header>
