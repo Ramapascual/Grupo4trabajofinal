@@ -72,6 +72,64 @@ module.exports = {
         res.render('productCart', {
             title: 'Carrito de compras',
             styles: ['cartMobile', 'cartTablet', 'cartDesktop'],
+            className: 'not-main-Home',
+            shoppingItems:[
+                {
+                    formSelectorName: 'cartArticle1',
+                    formSelectorValue: 'productID=1, value=40000',
+                    checkboxName: 'cartArticleSelected',
+                    productId: 1,
+                    mainPicSrc: '/assets/productImages/streamDeck.jpg',
+                    picAlt: 'Streamdeck',
+                    productName: 'Stream deck Elgato MK.2',
+                    price: 40000
+                },
+                {
+                    formSelectorName: 'cartArticle2',
+                    formSelectorValue: 'productID=2, value=20490',
+                    checkboxName: 'cartArticle2Selected',
+                    productId: 2,
+                    mainPicSrc: '/assets/productImages/capturer.jpg',
+                    picAlt: 'Capturer',
+                    productName: '4K Plus Capturadora de video HDMI con loop out, HD 60S USB 3.0',
+                    price: 20490
+                }
+            ],
+            purchaseSubTotal: 0,
+            paymentMethods: [
+                {
+                    selectorValue: 'paymentMetId=1, cardNumber= "4010990061071678", cardIssuer= "Visa", cardHolder= "Sebastian Rangel", expirationDate= 01/03/2025',
+                    radioValue: 'paymentId = 1',
+                    issuer: 'Visa',
+                    last4: '1678',
+                    cardHolder: 'Sebastian Rangel',
+                    expirationDate: '03/25'
+                },
+                {
+                    selectorValue: 'paymentMetId=2, cardNumber= "530455348651162", cardIssuer= "Mastercard", cardHolder= "Sebastian Rangel", expirationDate= 01/04/2024',
+                    radioValue: 'paymentId = 2',
+                    issuer: 'Mastercard',
+                    last4: '1162',
+                    cardHolder: 'Sebastian Rangel',
+                    expirationDate: '04/24'
+                }
+            ],
+            shippingAddresses: [
+                {
+                    selectorValue: 'addressID= 1, fullName = "Sebastian Rangel", address= "11580 NW 105th St", city= "Miami" state= "Florida", zipCode= 33178',
+                    radioValue: 'addressId =1',
+                    tittle: 'Sebastian Rangel',
+                    address: '11580 NW 105th St Miami, Florida',
+                    zipCode: 33178
+                },
+                {
+                    selectorValue: 'addressID= 2, fullName = "Camila Carreño", address= "208 Ridge St", city= "Clark Summit" state= "Pennsylvania", zipCode= 18411',
+                    radioValue: 'addressId =1',
+                    tittle: 'Camila Carreño',
+                    address: '208 Ridge St Clark Summit, Pennsylvania',
+                    zipCode: 18411
+                }
+            ]
         });
     }
 }

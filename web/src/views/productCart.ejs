@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include('./partials/head')  -%> 
+<body class="bg-image">
+    <%- include('./partials/header')  -%>
+    <main>
+        <form action="/" method="post" class="form-wrapper">
+            <section class="shopping-items">
+                <div class="shopping-header">
+                    <div class="heading">
+                        <h1 class="tittle">Tu pedido</h1>
+                    </div>
+                    <div class="column">
+                        <span>Precio</span>
+                    </div>
+                </div>
+                <% shoppingItems.forEach(item => { %>
+                    <article class="shopping-item">
+                        <div class="item-selector">
+                            <input type="hidden" name="<%= item.formSelectorName %> " value="<%= item.formSelectorValue %> ">
+                            <input type="checkbox" name="<%= item.checkboxName %>" value="<%= item.checkboxName %>">
+                        </div>
+                        <div class="product-detail">
+                            <a href="/products/detail/<%= item.productID %>" class="product-image-link">
+                            <figure>
+                                <img src="<%= item.mainPicSrc %> " alt="<%= item.picAlt %> ">
+                            </figure>
+                            </a>
+                            <a href="/products/detail/<%= item.productID %>" class="product-name-link">
+                                <h4 class="product-name"><%= item.productName %></h4>
+                            </a>
+                            <div class="product-quantity">
+                                <fieldset class="quantity-selector">
+                                    <span>Cant.</span>
+                                    <select name="quantity">
+                                        <option value="1" selected>1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </fieldset>
+                                <button class="product-delete">
+                                    <span class="material-icons">delete</span><span>Eliminar</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <span><i class="currency material-icons">attach_money</i><%= item.price %></span>
+                        </div>
+                    </article>
+                <% }) %>
+                <div class="price subtotal">
+                    <div><span><i class="currency material-icons">attach_money</i>60.490</span></div>
+                </div>
+            </section>
+            <section class="shipping-payment-info-wrapper">
+                <div class="shipping-payment-info-header">
+                    <span>Información de pago y envío</span>
+                </div>
+                <article class="info-wrapper">
+                    <div class="payment-wrapper">
+                        <div class="payment-header">
+                            <span>Tus tarjetas</span>
+                        </div>
+                        <% paymentMethods.forEach(payment => { %>
+                            <div class="card">
+                                <div class="card-selector">
+                                    <input type="hidden" name="paymentMethod" value="<%= payment.selectorValue %>">
+                                    <input type="radio" name="paymentMethodSelected" value="<%= payment.radioValue %> ">
+                                </div>
+                                <div class="card-info">
+                                    <span class="card-title">
+                                        <i><%= payment.issuer %></i> que termina en <%= payment.last4 %> 
+                                    </span>
+                                    <span class="card-holder"><%= payment.cardHolder %></span>
+                                    <span class="card-expiration"><%= payment.expirationDate %></span>
+                                    <input type="number" name="ccv">
+                                </div>
+                            </div>
+                        <% }) %>
+                    </div>
+                </article>
+                <article class="info-wrapper">
+                    <div class="shipping-wrapper">
+                        <div class="shipping-header">
+                            <span>Tus direcciones</span>
+                        </div>
+                        <% shippingAddresses.forEach(address => { %>
+                            <div class="address-wrapper">
+                                <div class="address-selector">
+                                    <input type="hidden" name="shippingAddress" value="<%= address.selectorValue %> ">
+                                    <input type="radio" name="shippingAddressSelected" value="<%= address.radioValue %> ">
+                                </div>
+                                <div class="address-info">
+                                    <span class="address-tittle"><%= address.tittle %> </span>
+                                    <span class="address">
+                                        <%= address.address %> 
+                                    </span>
+                                    <span><%= address.zipCode %></span>
+                                </div>
+                            </div>
+                        <% }) %>
+                    </div>
+                </article>
+            </section>
+            <section class="checkout">
+                <div class="gift-purchase"><input type="checkbox" name="giftPurchase" id="giftPurchase"><label for="giftPurchase">Esta compra es un obsequio</label></div>
+                <div class="checkout-subT">
+                    <span class="subtotal">Subtotal <i class="currency material-icons">attach_money</i>60.490</span>
+                    <span class="subtotal">Gastos de envío<i class="currency material-icons">attach_money</i>500</span>
+                </div>
+                <div class="checkout-container">
+                    <span class="total">Total <i class="currency material-icons">attach_money</i> 60.990</span>
+                    <button type="submit" class="purchase-btn"><span>Comprar</span><i class="material-icons">payment</i></button>
+                </div>
+            </section>
+        </form>
+    </main>
+    <%- include('./partials/footer')  -%> 
+</body>
+</html>
