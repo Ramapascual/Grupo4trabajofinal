@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+    <%- include('../partials/head')  -%> 
+<body class="bg-image">
+        <%- include('../partials/header')  -%>
+        <main>
+            <%- include('../partials/asideFilter')  -%>
+            <section class="product-create">
+                <form action="">
+                <div class="formulario">
+                    <label for="nombre-apellido">Nombre del producto</label>
+                    <input class="relleno" type="text" name="nombre-producto" />
+                    <label for="number">precio</label>
+                    <input class="relleno" required />
+                    <label class="infodenombres" for="nombre-apellido">imagen del producto</label>
+                    <input class="relleno" type="file" name="imagenProducto">
+
+                    <h2 id="info">Informacion</h2>
+                    <label class="infodenombres" for="nombre-apellido">Colores</label>
+                    <input class="relleno" type="text" name="nombre-producto" min="1" required />
+                    <label class="infodenombres" for="nombre-apellido">Apto</label>
+                    <input class="relleno" type="text" name="nombre-producto" min="1" required />
+
+                    <h2 id="Detalle">Detalle</h2>
+                    <label for="nombre-apellido">descripcion</label>
+                    <input class="descripcion" type="text" name="nombre-producto" min="1" required />
+
+                    <div id="boton">
+                        <a href="/">  <button type="" class="Cancelar">Cancelar</button></a>
+                        <button type="submit" class="botonform">Enviar</button>
+                    </div>
+                </div>
+            </form>
+            </section>
+
+        </main>
+        <%- include('../partials/footer') -%>  
+    </body>
+    </html>
