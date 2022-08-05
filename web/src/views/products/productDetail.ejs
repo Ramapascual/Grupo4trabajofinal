@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+    <%- include('../partials/head')  -%> 
+<body class="bg-image">
+    <%- include('../partials/header')  -%>
+    <main>
+       <%- include('../partials/asideFilter')  -%>
+       <section class="product-detail">
+            <%- include('../partials/productBreadcrumb')  -%>
+            <article class="product-wrapper">
+                <div class="product-main-wrapper">
+                    <figure class="product-images">
+                        <div class="product-thumbnails">
+                            <% product.images.forEach(image => { %>
+                               <img src="<%= image %> " alt="feature"> 
+                            <% }) %>
+                        </div>
+                        <img class="img-main" src="<%= product.images[0] %>" alt="<%= product.picAlt %> ">
+                    </figure>
+                    <div class="product-info">
+                        <h3><%= product.name %></h3>
+                        <span class="product-rating">
+                            <i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star_border</i>
+                        </span>
+                        <span class="pricing"><i class="material-icons">attach_money</i><%= product.price %></span>
+                        <a class="btn-add2Cart"><i class="material-icons">add_shopping_cart</i>Comprar</a>
+                    </div>
+                </div>
+                <div class="product-description-wrapper">
+                    <div class="description-header">Descripción de producto</div>
+                    <div class="tab-wrapper">
+                        <ul class="tabs">
+                            <li><a href="#about" class="tab active">Información</a></li>
+                            <li><a href="#specs" class="tab">Especificaciones</a></li>
+                            <li><a href="#more" class="tab">Más</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-content">
+                        <div id="about" class="tab-pane active">
+                            <% product.description.features.forEach(feature => { %>
+                                <span class="product-feature"><%= feature %></span>
+                            <% }) %>
+                            <figure>
+                                <% product.description.infoImages.forEach(img => { %>
+                                 <img src="<%= img %> " alt="info">
+                                <% }) %>
+                            </figure>
+                        </div>
+                        <div id="specs" class="tab-pane">
+
+                        </div>
+                        <div id="more" class="tab-pane">
+
+                        </div>
+                    </div>
+                </div>
+            </article> 
+       </section>  
+    </main>
+    <%- include('../partials/footer') -%>  
+</body>
+</html>

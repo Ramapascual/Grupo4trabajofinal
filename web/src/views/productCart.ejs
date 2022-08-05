@@ -21,12 +21,12 @@
                             <input type="checkbox" name="<%= item.checkboxName %>" value="<%= item.checkboxName %>">
                         </div>
                         <div class="product-detail">
-                            <a href="/products/detail/<%= item.productID %>" class="product-image-link">
+                            <a href="/products/<%= item.productID %>" class="product-image-link">
                             <figure>
                                 <img src="<%= item.mainPicSrc %> " alt="<%= item.picAlt %> ">
                             </figure>
                             </a>
-                            <a href="/products/detail/<%= item.productID %>" class="product-name-link">
+                            <a href="/products/<%= item.productID %>" class="product-name-link">
                                 <h4 class="product-name"><%= item.productName %></h4>
                             </a>
                             <div class="product-quantity">

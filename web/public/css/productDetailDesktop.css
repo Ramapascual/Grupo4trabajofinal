@@ -54,6 +54,7 @@
      .product-info{
       align-items: flex-start;
       justify-content: center;
+      justify-items: center;
       order: 1;
       width: 27vw;
      }
@@ -76,5 +77,14 @@
       position: static;
       text-align: center;
      }
+    }
+
+    @media screen and (min-width:1908px){
+      
+      .btn-add2Cart{
+        left: -12rem;
+        position: relative;
+        top: 5rem;
+      }
     }
     
